@@ -408,6 +408,38 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxQuoteBtn.addEventListener('click', closeLightboxModal);
   }
 
+  // Privacy Policy Modal Handler
+  const privacyModal = document.getElementById('privacy-modal');
+  const openPrivacyBtn = document.getElementById('open-privacy-btn');
+  const privacyClose = document.getElementById('privacy-close');
+  const privacyBackdrop = document.getElementById('privacy-backdrop');
+  const privacyAcceptBtn = document.getElementById('privacy-accept-btn');
+
+  const openPrivacyModal = () => {
+    if (!privacyModal) return;
+    privacyModal.classList.add('active');
+    privacyModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closePrivacyModal = () => {
+    if (!privacyModal) return;
+    privacyModal.classList.remove('active');
+    privacyModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  if (openPrivacyBtn) openPrivacyBtn.addEventListener('click', openPrivacyModal);
+  if (privacyClose) privacyClose.addEventListener('click', closePrivacyModal);
+  if (privacyBackdrop) privacyBackdrop.addEventListener('click', closePrivacyModal);
+  if (privacyAcceptBtn) privacyAcceptBtn.addEventListener('click', closePrivacyModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && privacyModal?.classList.contains('active')) {
+      closePrivacyModal();
+    }
+  });
+
   // =========================================================================
   // 8. Formulario de Contacto Directo -> WhatsApp
   // =========================================================================

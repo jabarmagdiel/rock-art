@@ -1023,10 +1023,43 @@
     <div class="footer-bottom">
       <div class="footer-bottom-container">
         <p>&copy; 2026 Rock Art - Bio-Arquitectura y Paisajismo en Roca. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <button type="button" id="open-privacy-btn" class="legal-link-btn">Aviso de Privacidad y Términos</button>
+        </div>
         <p class="footer-designer">Diseñado con excelencia artesanal y realismo.</p>
       </div>
     </div>
   </footer>
+
+  <!-- MODAL DE POLÍTICAS DE PRIVACIDAD Y SEGURIDAD -->
+  <div class="privacy-modal" id="privacy-modal" aria-hidden="true" role="dialog">
+    <div class="privacy-backdrop" id="privacy-backdrop"></div>
+    <div class="privacy-content">
+      <div class="privacy-header">
+        <div class="privacy-title-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Aviso de Privacidad y Condiciones de Uso</h3>
+        </div>
+        <button class="privacy-close" id="privacy-close" aria-label="Cerrar aviso">&times;</button>
+      </div>
+      <div class="privacy-body">
+        <h4>1. Tratamiento de Datos Personales</h4>
+        <p>En <strong>Rock Art</strong> valoramos y respetamos profundamente tu privacidad. Toda la información proporcionada a través de nuestros formularios de contacto, cotizadores o canales de WhatsApp (como nombre, número telefónico y detalles del proyecto) se utiliza con el fin exclusivo de brindar asesoramiento técnico personalizado y presupuestos de diseño y bio-construcción.</p>
+        
+        <h4>2. Confidencialidad y Seguridad</h4>
+        <p>No comercializamos, transferimos ni compartimos datos personales con terceras partes bajo ningún concepto. Tu información se encuentra protegida bajo estrictos estándares de confidencialidad.</p>
+
+        <h4>3. Derechos de Propiedad Intelectual</h4>
+        <p>Las fotografías, renders, marcas y diseños de bio-arquitectura exhibidos en este sitio web son propiedad exclusiva de Rock Art y están protegidos por leyes de propiedad intelectual.</p>
+
+        <h4>4. Contacto Oficial</h4>
+        <p>Para cualquier consulta o solicitud sobre la privacidad de tus datos, puedes comunicarte directamente a <strong>rockart.proyectos@gmail.com</strong> o a nuestra línea WhatsApp oficial <strong>+591 712 34567</strong> en Santa Cruz de la Sierra, Bolivia.</p>
+      </div>
+      <div class="privacy-footer">
+        <button type="button" class="btn-privacy-accept" id="privacy-accept-btn">Entendido y Conforme</button>
+      </div>
+    </div>
+  </div>
 
   <!-- LIGHTBOX MODAL PARA FOTOGRAFÍAS -->
   <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
