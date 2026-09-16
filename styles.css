@@ -307,7 +307,7 @@ button {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .sound-toggle-btn {
@@ -2344,28 +2344,34 @@ button {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (Tablets y Smartphones)
+   RESPONSIVE DESIGN COMPLETO (Tablets, Pantallas Medianas y Smartphones)
    ========================================================================== */
+
+/* --- Tablets Grandes y Laptops Pequeñas (<= 1100px) --- */
 @media (max-width: 1100px) {
   .featured-projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .testimonials-grid {
     grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .about-container {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 45px;
   }
 
   .about-img-frame {
-    max-width: 600px;
+    max-width: 580px;
     margin: 0 auto;
   }
 
@@ -2374,7 +2380,12 @@ button {
   }
 }
 
+/* --- Tablets en Retrato y Pantallas Medianas (<= 900px) --- */
 @media (max-width: 900px) {
+  .section-container {
+    padding: 70px 0;
+  }
+
   .main-nav {
     display: none;
   }
@@ -2383,9 +2394,17 @@ button {
     display: flex;
   }
 
+  .social-links {
+    display: none; /* Ocultar en barra superior para no saturar; disponible en menú móvil y footer */
+  }
+
   .services-grid {
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 22px 18px;
   }
 
   .service-divider-vertical {
@@ -2396,6 +2415,7 @@ button {
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .sim-inputs-row {
@@ -2411,30 +2431,454 @@ button {
   }
 
   .floating-bubble {
-    display: none;
+    display: none !important;
   }
 }
 
+/* --- Smartphones y Pantallas Móviles (<= 640px) --- */
 @media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section-container {
+    width: 90%;
+    padding: 55px 0;
+  }
+
+  /* Header móvil compacto */
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .logo-image-wrapper {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-title {
+    font-size: 1.25rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+  }
+
+  .sound-label {
+    display: none; /* Ocultar texto 'Ambiente' para que no ocupe espacio horizontal */
+  }
+
+  .sound-toggle-btn {
+    padding: 6px 9px;
+  }
+
+  /* Hero Adaptado a Móviles */
   .hero-section {
-    padding: 120px 0 80px 0;
+    padding: 110px 0 70px 0;
+    min-height: 90vh;
+  }
+
+  .hero-eyebrow {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .eyebrow-line {
+    width: 20px;
+  }
+
+  .eyebrow-text {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 9.5vw, 2.9rem);
+    line-height: 1.1;
+    margin-bottom: 18px;
+    word-break: break-word;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 26px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  .btn-cta-green, .btn-cta-gold, .btn-cta-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.85rem;
+  }
+
+  .hero-trust-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding-top: 16px;
+  }
+
+  .trust-badge {
+    font-size: 0.72rem;
+    gap: 6px;
+  }
+
+  .trust-badge i {
+    font-size: 0.85rem;
+  }
+
+  /* Servicios Móvil */
+  .services-section {
+    padding: 60px 0 70px 0;
+  }
+
+  .section-title-cream {
+    font-size: 1.55rem;
+    letter-spacing: 0.1em;
+  }
+
+  .service-card {
+    padding: 18px 12px;
+  }
+
+  .service-icon-box {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 14px;
+  }
+
+  .service-svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .service-title {
+    font-size: 0.98rem;
+  }
+
+  .service-description {
+    font-size: 0.84rem;
+    max-width: 100%;
+    margin-bottom: 14px;
+  }
+
+  /* Comparador Antes y Después en Móvil */
+  .transformation-section {
+    padding: 60px 0;
+  }
+
+  .before-after-container {
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .ba-label {
+    top: 10px;
+    padding: 3px 10px;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+  }
+
+  .ba-label-before { left: 10px; }
+  .ba-label-after { right: 10px; }
+
+  .ba-handle {
+    width: 36px;
+    margin-left: -18px;
+  }
+
+  .ba-handle-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 0.68rem;
+  }
+
+  .ba-hint {
+    font-size: 0.76rem;
+  }
+
+  /* Proyectos Destacados en Móvil */
+  .projects-section {
+    padding: 65px 0 75px 0;
+  }
+
+  .projects-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .section-title-dark {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .btn-view-all {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 18px;
   }
 
   .featured-projects-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-info-bar {
+    padding: 14px 16px;
+  }
+
+  /* Galería en Móvil */
+  .gallery-section {
+    padding: 65px 0;
+  }
+
+  .filter-tabs {
+    gap: 6px;
+    margin-bottom: 26px;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.74rem;
   }
 
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-item-overlay {
+    padding: 16px;
+  }
+
+  .gallery-item-overlay h4 {
+    font-size: 0.95rem;
+  }
+
+  /* Simulador en Móvil */
+  .simulator-section {
+    padding: 65px 0;
+  }
+
+  .simulator-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+    gap: 22px;
+  }
+
+  .sim-step-title {
+    font-size: 0.92rem;
+  }
+
+  .step-num {
+    width: 26px;
+    height: 26px;
+    font-size: 0.82rem;
+  }
+
+  .sim-options-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .sim-opt-btn {
+    padding: 12px 14px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .sim-opt-btn i {
+    font-size: 1.3rem;
+  }
+
+  .sim-opt-btn .opt-name {
+    font-size: 0.85rem;
+  }
+
+  .sim-opt-btn .opt-desc {
+    font-size: 0.7rem;
+  }
+
+  /* Inputs con 16px font para evitar zoom forzado de iOS Safari */
+  .sim-field select, .form-group input, .form-group select, .form-group textarea {
+    font-size: 16px !important;
+    padding: 10px 14px;
+  }
+
+  .sim-check-label {
+    font-size: 0.76rem;
+    padding: 10px 12px;
+  }
+
+  .sim-result-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 14px;
+    gap: 16px;
+  }
+
+  #result-summary-title {
+    font-size: 1.1rem;
+  }
+
+  .btn-send-sim-whatsapp {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 13px 18px;
+  }
+
+  /* Testimonios en Móvil */
+  .testimonials-section {
+    padding: 65px 0;
+  }
+
+  .testimonial-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .testi-text {
+    font-size: 0.84rem;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .author-info h4 {
+    font-size: 0.86rem;
+  }
+
+  .author-info span {
+    font-size: 0.7rem;
+  }
+
+  /* Sobre Nosotros en Móvil */
+  .about-section {
+    padding: 65px 0;
+  }
+
+  .about-panorama-img {
+    height: 210px;
+  }
+
+  .about-title {
+    font-size: 1.55rem;
+  }
+
+  .about-text {
+    font-size: 0.88rem;
+  }
+
+  .about-text-secondary {
+    font-size: 0.82rem;
+  }
+
+  .about-stats {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .stat-number {
+    font-size: 1.45rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .about-quote-column {
+    padding: 20px 14px;
+  }
+
+  .about-emblem {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .about-blockquote {
+    font-size: 0.98rem;
+  }
+
+  .signature-script {
+    font-size: 2.2rem;
+  }
+
+  /* Contacto en Móvil */
+  .contact-section {
+    padding: 65px 0;
+  }
+
+  .contact-form-card, .contact-details-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+  }
+
+  .form-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .btn-submit-whatsapp {
+    padding: 13px;
+    font-size: 0.88rem;
+  }
+
+  .contact-info-list {
+    gap: 12px;
+  }
+
+  .contact-info-item {
+    padding: 10px 12px;
+    gap: 12px;
+  }
+
+  .info-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .info-val {
+    font-size: 0.82rem;
+    word-break: break-all;
+  }
+
+  /* Footer Strip en Móvil */
+  .footer-contact-strip {
+    padding: 18px 0;
   }
 
   .strip-container {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .strip-item {
+    font-size: 0.82rem;
   }
 
   .strip-dot {
@@ -2444,23 +2888,75 @@ button {
   .footer-bottom-container {
     flex-direction: column;
     text-align: center;
+    gap: 8px;
   }
 
-  .sim-options-grid {
+  /* Lightbox Modal en Móvil */
+  .lightbox-content {
+    width: 94%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+  }
+
+  .lightbox-close {
+    top: 10px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.5rem;
+  }
+
+  .lightbox-media {
+    max-height: 260px;
+  }
+
+  .lightbox-media img {
+    max-height: 260px;
+  }
+
+  .lightbox-details {
+    padding: 16px 18px;
+    gap: 8px;
+  }
+
+  #lightbox-title {
+    font-size: 1.15rem;
+  }
+
+  #lightbox-desc {
+    font-size: 0.84rem;
+  }
+
+  /* Botón Flotante WhatsApp en Móvil */
+  .floating-whatsapp-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-whatsapp {
+    width: 54px;
+    height: 54px;
+    font-size: 1.8rem;
+  }
+}
+
+/* --- Teléfonos Extra Pequeños (<= 375px: iPhone SE, Galaxy mini) --- */
+@media (max-width: 375px) {
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-trust-badges {
     grid-template-columns: 1fr;
   }
 
-  .sim-result-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .btn-send-sim-whatsapp {
-    width: 100%;
-    justify-content: center;
-  }
-
   .before-after-container {
-    height: 280px;
+    height: 220px;
   }
 }
+
