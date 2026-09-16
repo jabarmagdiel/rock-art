@@ -240,76 +240,77 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 6. Simulador Interactivo de Proyectos en 3 Pasos
+  // 6. Simulador Interactivo de Proyectos (si está presente en DOM)
   // =========================================================================
-  const simTypeBtns = document.querySelectorAll('.sim-opt-btn');
   const simScaleSelect = document.getElementById('sim-scale');
-  const simCitySelect = document.getElementById('sim-city');
-  const extraCheckboxes = document.querySelectorAll('.sim-checkboxes-grid input');
-  const resultSummaryTitle = document.getElementById('result-summary-title');
-  const resultSummaryDetails = document.getElementById('result-summary-details');
-  const btnSendSim = document.getElementById('btn-send-sim');
+  if (simScaleSelect) {
+    const simTypeBtns = document.querySelectorAll('.sim-opt-btn');
+    const simCitySelect = document.getElementById('sim-city');
+    const extraCheckboxes = document.querySelectorAll('.sim-checkboxes-grid input');
+    const resultSummaryTitle = document.getElementById('result-summary-title');
+    const resultSummaryDetails = document.getElementById('result-summary-details');
+    const btnSendSim = document.getElementById('btn-send-sim');
 
-  let currentProject = {
-    type: 'Piscina Natural de Roca',
-    scale: 'Residencial Amplio / Quinta (50 a 150 m²)',
-    city: 'Santa Cruz',
-    extras: []
-  };
+    let currentProject = {
+      type: 'Piscina Natural de Roca',
+      scale: 'Residencial Amplio / Quinta (50 a 150 m²)',
+      city: 'Santa Cruz',
+      extras: []
+    };
 
-  const updateSimSummary = () => {
-    // Selected extras
-    const extrasList = [];
-    if (document.getElementById('extra-lights')?.checked) extrasList.push('Iluminación LED');
-    if (document.getElementById('extra-cave')?.checked) extrasList.push('Gruta / Cueva');
-    if (document.getElementById('extra-bio')?.checked) extrasList.push('Bio-filtrado');
-    if (document.getElementById('extra-render')?.checked) extrasList.push('Render 3D');
+    const updateSimSummary = () => {
+      const extrasList = [];
+      if (document.getElementById('extra-lights')?.checked) extrasList.push('Iluminación LED');
+      if (document.getElementById('extra-cave')?.checked) extrasList.push('Gruta / Cueva');
+      if (document.getElementById('extra-bio')?.checked) extrasList.push('Bio-filtrado');
+      if (document.getElementById('extra-render')?.checked) extrasList.push('Render 3D');
 
-    currentProject.extras = extrasList;
-    currentProject.scale = simScaleSelect ? simScaleSelect.value : '';
-    currentProject.city = simCitySelect ? simCitySelect.value : '';
+      currentProject.extras = extrasList;
+      currentProject.scale = simScaleSelect ? simScaleSelect.value : '';
+      currentProject.city = simCitySelect ? simCitySelect.value : '';
 
-    if (resultSummaryTitle) {
-      resultSummaryTitle.textContent = `${currentProject.type}`;
-    }
+      if (resultSummaryTitle) {
+        resultSummaryTitle.textContent = `${currentProject.type}`;
+      }
 
-    if (resultSummaryDetails) {
-      const extrasText = extrasList.length > 0 ? ` + ${extrasList.join(', ')}` : '';
-      resultSummaryDetails.textContent = `${currentProject.scale} en ${currentProject.city}${extrasText}.`;
-    }
-  };
+      if (resultSummaryDetails) {
+        const extrasText = extrasList.length > 0 ? ` + ${extrasList.join(', ')}` : '';
+        resultSummaryDetails.textContent = `${currentProject.scale} en ${currentProject.city}${extrasText}.`;
+      }
+    };
 
-  simTypeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      simTypeBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentProject.type = btn.getAttribute('data-type');
-      updateSimSummary();
+    simTypeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        simTypeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentProject.type = btn.getAttribute('data-type');
+        updateSimSummary();
+      });
     });
-  });
 
-  if (simScaleSelect) simScaleSelect.addEventListener('change', updateSimSummary);
-  if (simCitySelect) simCitySelect.addEventListener('change', updateSimSummary);
-  extraCheckboxes.forEach(chk => chk.addEventListener('change', updateSimSummary));
+    simScaleSelect.addEventListener('change', updateSimSummary);
+    if (simCitySelect) simCitySelect.addEventListener('change', updateSimSummary);
+    extraCheckboxes.forEach(chk => chk.addEventListener('change', updateSimSummary));
 
-  updateSimSummary();
+    updateSimSummary();
 
-  if (btnSendSim) {
-    btnSendSim.addEventListener('click', () => {
-      const whatsappNumber = '59171234567';
-      const extrasFormatted = currentProject.extras.length > 0
-        ? currentProject.extras.map(e => `  • ${e}`).join('%0A')
-        : '  • Estándar';
+    if (btnSendSim) {
+      btnSendSim.addEventListener('click', () => {
+        const whatsappNumber = '59171234567';
+        const extrasFormatted = currentProject.extras.length > 0
+          ? currentProject.extras.map(e => `  • ${e}`).join('%0A')
+          : '  • Estándar';
 
-      const text = `*SIMULACIÓN DE PROYECTO - ROCK ART*%0A%0A` +
-        `🌿 *Espacio deseado:* ${encodeURIComponent(currentProject.type)}%0A` +
-        `📏 *Escala estimada:* ${encodeURIComponent(currentProject.scale)}%0A` +
-        `📍 *Ubicación:* ${encodeURIComponent(currentProject.city)}%0A` +
-        `✨ *Elementos adicionales:*%0A${extrasFormatted}%0A%0A` +
-        `_Hola, he configurado este proyecto en su simulador web y quisiera recibir asesoría y presupuesto estimado._`;
+        const text = `*SOLICITUD DE PRESUPUESTO - ROCK ART*%0A%0A` +
+          `🌿 *Espacio deseado:* ${encodeURIComponent(currentProject.type)}%0A` +
+          `📏 *Escala estimada:* ${encodeURIComponent(currentProject.scale)}%0A` +
+          `📍 *Ubicación:* ${encodeURIComponent(currentProject.city)}%0A` +
+          `✨ *Elementos adicionales:*%0A${extrasFormatted}%0A%0A` +
+          `_Hola, deseo recibir asesoría y presupuesto para este proyecto._`;
 
-      window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
-    });
+        window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+      });
+    }
   }
 
   // =========================================================================

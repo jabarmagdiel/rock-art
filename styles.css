@@ -222,16 +222,18 @@ button {
   color: #ffffff;
   line-height: 1.1;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
 }
 
 .brand-subtitle {
-  font-size: 0.68rem;
-  letter-spacing: 0.35em;
+  font-size: 0.64rem;
+  letter-spacing: 0.22em;
   color: var(--gold-accent);
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .brand-subtitle::before, .brand-subtitle::after {
@@ -262,6 +264,7 @@ button {
   color: rgba(255, 255, 255, 0.85);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
   transition: var(--transition-smooth);
 }
 
