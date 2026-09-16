@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Art | Experiencias Naturales Únicas - Bio-Arquitectura y Paisajismo</title>
+  <meta name="description" content="Diseñamos y construimos experiencias naturales únicas. Piscinas naturales de roca, bio-lagunas, cascadas y parques temáticos en Bolivia.">
+  <meta name="keywords" content="Rock Art, Piscinas Naturales, Parques Tematicos, Paisajismo Bolivia, Santa Cruz, Cochabamba, La Paz, Bio-arquitectura">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=Alex+Brush&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement / Ambient Line -->
+  <div class="top-glow-bar"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="brand-logo" aria-label="Rock Art Inicio">
+        <div class="logo-image-wrapper">
+          <img src="assets/images/logo.jpg" alt="Rock Art Emblema" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Rock Art</span>
+          <span class="brand-subtitle">ROCK ART</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (SIN SECCIÓN BLOG) -->
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">INICIO</a></li>
+          <li class="nav-item"><a href="#nosotros" class="nav-link">NOSOTROS</a></li>
+          <li class="nav-item"><a href="#servicios" class="nav-link">SERVICIOS</a></li>
+          <li class="nav-item"><a href="#transformacion" class="nav-link">TRANSFORMACIÓN</a></li>
+          <li class="nav-item"><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">GALERÍA</a></li>
+          <li class="nav-item"><a href="#simulador" class="nav-link highlight-link">COTIZADOR 3D</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ambient Sound Toggle, Social Links & Mobile Toggle -->
+      <div class="header-right">
+        <!-- Ambient Sound Player Toggle -->
+        <button class="sound-toggle-btn" id="sound-toggle" title="Activar/Desactivar sonido ambiental de cascada">
+          <i class="fa-solid fa-volume-xmark" id="sound-icon"></i>
+          <span class="sound-label">Ambiente</span>
+        </button>
+
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook de Rock Art">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram de Rock Art">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/59171234567?text=Hola%20Rock%20Art,%20deseo%20información%20sobre%20sus%20proyectos" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp-icon" aria-label="WhatsApp de Rock Art">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-title">Rock Art</span>
+        <span class="brand-subtitle">ROCK ART</span>
+      </div>
+      <button class="close-drawer" id="close-drawer" aria-label="Cerrar menú">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#inicio" class="mobile-nav-link">INICIO</a></li>
+      <li><a href="#nosotros" class="mobile-nav-link">NOSOTROS</a></li>
+      <li><a href="#servicios" class="mobile-nav-link">SERVICIOS</a></li>
+      <li><a href="#transformacion" class="mobile-nav-link">ANTES Y DESPUÉS</a></li>
+      <li><a href="#proyectos" class="mobile-nav-link">PROYECTOS</a></li>
+      <li><a href="#galeria" class="mobile-nav-link">GALERÍA</a></li>
+      <li><a href="#simulador" class="mobile-nav-link">SIMULADOR / COTIZADOR</a></li>
+      <li><a href="#testimonios" class="mobile-nav-link">TESTIMONIOS</a></li>
+      <li><a href="#contacto" class="mobile-nav-link">CONTACTO</a></li>
+    </ul>
+    <div class="mobile-socials">
+      <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/59171234567" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION WITH CINEMATIC ATMOSPHERE -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-bg-media"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-vignette"></div>
+
+      <!-- Canvas de partículas bioluminiscentes / luciérnagas -->
+      <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">DISEÑAMOS Y CONSTRUIMOS</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line white">EXPERIENCIAS</span>
+          <span class="title-line green text-glow">NATURALES</span>
+          <span class="title-line white">ÚNICAS</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Combinamos naturaleza, diseño y arte para crear espacios que inspiran, conectan y transforman.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#servicios" class="btn-cta-green">
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+              </svg>
+            </span>
+            <span class="btn-text">CONOCE MÁS</span>
+          </a>
+          <a href="#simulador" class="btn-cta-gold">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>SIMULAR PROYECTO</span>
+          </a>
+          <a href="#transformacion" class="btn-cta-outline">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <span>VER ANTES Y DESPUÉS</span>
+          </a>
+        </div>
+
+        <!-- Floating Trust Badges in Hero -->
+        <div class="hero-trust-badges">
+          <div class="trust-badge">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Bio-Piscinas Ecológicas</span>
+          </div>
+          <div class="trust-badge">
+            <i class="fa-solid fa-gem"></i>
+            <span>Roca Esculpida 100% Realista</span>
+          </div>
+          <div class="trust-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>10 Años de Garantía</span>
+          </div>
+          <div class="trust-badge">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Obras en Toda Bolivia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom subtle wave transition -->
+      <div class="hero-bottom-accent"></div>
+    </section>
+
+    <!-- NUESTROS SERVICIOS SECTION (Tono crema/pergamino según boceto) -->
+    <section class="services-section" id="servicios">
+      <div class="section-container">
+        
+        <!-- Section Header with Plant Ornament -->
+        <div class="section-header center">
+          <span class="section-badge-cream">EXCELENCIA ARTESANAL</span>
+          <h2 class="section-title-cream">NUESTROS SERVICIOS</h2>
+          <div class="leaf-ornament">
+            <span class="ornament-line"></span>
+            <span class="ornament-leaf"><i class="fa-solid fa-leaf"></i></span>
+            <span class="ornament-line"></span>
+          </div>
+        </div>
+
+        <!-- 4 Services Columns Grid -->
+        <div class="services-grid">
+          
+          <!-- Servicio 1: NATURALEZA -->
+          <div class="service-card" data-tilt>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 52L26 22L36 38L42 28L56 52H8Z" />
+                <path d="M26 22L32 14L40 26" />
+                <circle cx="48" cy="18" r="4" fill="currentColor" />
+                <path d="M14 52L24 38L30 46" />
+              </svg>
+            </div>
+            <h3 class="service-title">NATURALEZA</h3>
+            <p class="service-description">
+              Integramos elementos naturales para crear ambientes armónicos y sostenibles con agua pura y flora nativa.
+            </p>
+            <div class="card-feature-pill">Bio-filtración natural</div>
+            <div class="card-leaf-ornament">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+          </div>
+
+          <div class="service-divider-vertical"></div>
+
+          <!-- Servicio 2: DISEÑO -->
+          <div class="service-card" data-tilt>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 14L46 42M26 10L14 22L22 30L34 18Z" />
+                <path d="M46 22L18 50M38 14L50 26L42 34L30 22Z" />
+                <circle cx="32" cy="32" r="3" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="service-title">DISEÑO</h3>
+            <p class="service-description">
+              Desarrollamos propuestas creativas y funcionales adaptadas a cada espacio y necesidad en renders fotorrealistas.
+            </p>
+            <div class="card-feature-pill">Modelado 3D previo</div>
+            <div class="card-leaf-ornament">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+          </div>
+
+          <div class="service-divider-vertical"></div>
+
+          <!-- Servicio 3: TEMATIZACIONES -->
+          <div class="service-card" data-tilt>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 48L24 16L48 12L54 44L34 52Z" />
+                <path d="M24 16L34 32L54 44" />
+                <path d="M34 32L34 52" />
+                <path d="M22 28L14 48" />
+                <circle cx="28" cy="24" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="service-title">TEMATIZACIONES</h3>
+            <p class="service-description">
+              Damos vida a tus ideas mediante esculturas, relieves y ambientaciones temáticas únicas en roca y cavernas.
+            </p>
+            <div class="card-feature-pill">Escultura artesanal</div>
+            <div class="card-leaf-ornament">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+          </div>
+
+          <div class="service-divider-vertical"></div>
+
+          <!-- Servicio 4: EXPERIENCIA -->
+          <div class="service-card" data-tilt>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M32 54V24" />
+                <path d="M32 24C32 24 20 18 14 26C8 34 20 44 32 38" />
+                <path d="M32 24C32 24 44 18 50 26C56 34 44 44 32 38" />
+                <path d="M32 14C32 14 26 8 32 4C38 8 32 14 32 14Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="service-title">EXPERIENCIA</h3>
+            <p class="service-description">
+              Creamos experiencias sensoriales memorables con sonido de agua, iluminación nocturna cálida y descanso absoluto.
+            </p>
+            <div class="card-feature-pill">Sensación resort 5★</div>
+            <div class="card-leaf-ornament">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN ATRACTIVA: TRANSFORMACIÓN ANTES Y DESPUÉS -->
+    <section class="transformation-section" id="transformacion">
+      <div class="section-container">
+        
+        <div class="section-header center">
+          <span class="section-badge-green">EL PODER DE LA TRANSFORMACIÓN</span>
+          <h2 class="section-title-dark">DE TERRENO RÚSTICO A PARAÍSO NATURAL</h2>
+          <p class="section-lead">
+            Desliza el control central para ver cómo convertimos un espacio desaprovechado en un santuario privado de cascadas y descanso.
+          </p>
+        </div>
+
+        <div class="before-after-container" id="before-after-slider">
+          <!-- Imagen del Después (Fondo) -->
+          <img src="assets/images/proyecto-cascada.jpg" alt="Después: Oasis de roca con cascada y spa" class="ba-image ba-after">
+          
+          <!-- Imagen del Antes (Superpuesta recortada) -->
+          <div class="ba-resize" id="ba-resize">
+            <img src="assets/images/antes-obra.jpg" alt="Antes: Terreno baldío de tierra" class="ba-image ba-before">
+            <span class="ba-label ba-label-before">ANTES</span>
+          </div>
+          
+          <span class="ba-label ba-label-after">DESPUÉS</span>
+
+          <!-- Manija de arrastre interactiva -->
+          <div class="ba-handle" id="ba-handle">
+            <div class="ba-handle-circle">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicador de interacción -->
+        <div class="ba-hint">
+          <i class="fa-solid fa-hand-pointer"></i> Arrastra hacia los lados para comparar la transformación
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS SECTION (Fondo oscuro según boceto) -->
+    <section class="projects-section" id="proyectos">
+      <div class="section-container">
+        
+        <!-- Top Projects Bar -->
+        <div class="projects-header-row">
+          <div class="projects-title-box">
+            <span class="section-badge-gold">PORTAFOLIO BOLIVIA</span>
+            <h2 class="section-title-dark">PROYECTOS DESTACADOS</h2>
+            <div class="leaf-ornament-dark">
+              <span class="ornament-line-dark"></span>
+              <span class="ornament-leaf-dark"><i class="fa-solid fa-leaf"></i></span>
+              <span class="ornament-line-dark"></span>
+            </div>
+          </div>
+
+          <a href="#galeria" class="btn-view-all">
+            <span>VER TODOS LOS PROYECTOS</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <!-- 4 Featured Projects Cards Grid con Efecto 3D Tilt -->
+        <div class="featured-projects-grid">
+          
+          <!-- Proyecto 1: PARQUE TEMÁTICO -->
+          <div class="project-card" data-tilt data-category="parques" data-title="Parque Temático" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-parque.jpg" data-desc="Complejo recreativo inmersivo con cavernas artificiales de piedra esculpida, cascadas dobles iluminadas y piscina biológica cristalina.">
+            <div class="project-badge-tag">Destacado</div>
+            <div class="project-img-wrapper">
+              <img src="assets/images/proyecto-parque.jpg" alt="Parque Temático en Santa Cruz, Bolivia" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-zoom-btn" aria-label="Ver detalles del proyecto">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info-bar">
+              <h3 class="project-name">PARQUE TEMÁTICO</h3>
+              <p class="project-location">
+                <i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia
+              </p>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: PISCINA NATURAL -->
+          <div class="project-card" data-tilt data-category="piscinas" data-title="Piscina Natural" data-location="Cochabamba, Bolivia" data-img="assets/images/proyecto-piscina.jpg" data-desc="Oasis privado de bio-piscina con lecho de roca tallada, cascada natural integrada a la ladera montañosa y filtración biológica ecológica.">
+            <div class="project-badge-tag">Bio-Laguna</div>
+            <div class="project-img-wrapper">
+              <img src="assets/images/proyecto-piscina.jpg" alt="Piscina Natural en Cochabamba, Bolivia" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-zoom-btn" aria-label="Ver detalles del proyecto">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info-bar">
+              <h3 class="project-name">PISCINA NATURAL</h3>
+              <p class="project-location">
+                <i class="fa-solid fa-location-dot"></i> Cochabamba, Bolivia
+              </p>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: JARDÍN TROPICAL -->
+          <div class="project-card" data-tilt data-category="jardines" data-title="Jardín Tropical" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-jardin.jpg" data-desc="Diseño paisajístico de alto impacto con arcadas de piedra rústica, fuente central esculpida a mano y microclima con vegetación tropical autóctona.">
+            <div class="project-badge-tag">Paisajismo</div>
+            <div class="project-img-wrapper">
+              <img src="assets/images/proyecto-jardin.jpg" alt="Jardín Tropical en Santa Cruz, Bolivia" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-zoom-btn" aria-label="Ver detalles del proyecto">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info-bar">
+              <h3 class="project-name">JARDÍN TROPICAL</h3>
+              <p class="project-location">
+                <i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia
+              </p>
+            </div>
+          </div>
+
+          <!-- Proyecto 4: RESTAURANTE TEMÁTICO -->
+          <div class="project-card" data-tilt data-category="tematizaciones" data-title="Restaurante Temático" data-location="La Paz, Bolivia" data-img="assets/images/proyecto-restaurante.jpg" data-desc="Ambiente gastronómico subterráneo con bóvedas de roca natural, altorrelieves precolombinos tallados artesanalmente y caída de agua interior.">
+            <div class="project-badge-tag">Tematización</div>
+            <div class="project-img-wrapper">
+              <img src="assets/images/proyecto-restaurante.jpg" alt="Restaurante Temático en La Paz, Bolivia" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="project-zoom-btn" aria-label="Ver detalles del proyecto">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info-bar">
+              <h3 class="project-name">RESTAURANTE TEMÁTICO</h3>
+              <p class="project-location">
+                <i class="fa-solid fa-location-dot"></i> La Paz, Bolivia
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERÍA EXTENDIDA (Con filtros interactivos y lightbox) -->
+    <section class="gallery-section" id="galeria">
+      <div class="section-container">
+        
+        <div class="section-header center">
+          <span class="section-badge-green">OBRAS REALIZADAS</span>
+          <h2 class="section-title-dark">GALERÍA DE OBRAS Y TEMATIZACIONES</h2>
+          <p class="section-lead">Explora nuestra colección de obras maestras construidas en roca, agua y vegetación viva.</p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="piscinas">Piscinas y Lagunas</button>
+            <button class="filter-btn" data-filter="tematizaciones">Relieves y Esculturas</button>
+            <button class="filter-btn" data-filter="cascadas">Cascadas y Spas</button>
+            <button class="filter-btn" data-filter="jardines">Jardines y Parques</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          
+          <!-- Item 1: Parque -->
+          <div class="gallery-item" data-category="jardines" data-title="Parque Cavernas Místicas" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-parque.jpg" data-desc="Integración de rocas artificiales de alta durabilidad con piscinas de recirculación natural.">
+            <img src="assets/images/proyecto-parque.jpg" alt="Parque Cavernas Místicas" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Parques</span>
+              <h4>Parque Cavernas Místicas</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Piscina Natural -->
+          <div class="gallery-item" data-category="piscinas" data-title="Bio-Piscina Valle Alto" data-location="Cochabamba, Bolivia" data-img="assets/images/proyecto-piscina.jpg" data-desc="Piscina ecológica con lecho de piedra natural sin cloro y cascada terapéutica.">
+            <img src="assets/images/proyecto-piscina.jpg" alt="Bio-Piscina Valle Alto" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Piscinas</span>
+              <h4>Bio-Piscina Valle Alto</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Cochabamba, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Cascada & Spa -->
+          <div class="gallery-item" data-category="cascadas" data-title="Cascada Termal & Spa de Roca" data-location="Tarija, Bolivia" data-img="assets/images/proyecto-cascada.jpg" data-desc="Jacuzzi exterior integrado con muro de cascada de agua climatizada y nichos lumínicos.">
+            <img src="assets/images/proyecto-cascada.jpg" alt="Cascada Termal & Spa de Roca" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Cascadas</span>
+              <h4>Cascada Termal & Spa</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Tarija, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Escultura y Relieve Jaguar -->
+          <div class="gallery-item" data-category="tematizaciones" data-title="Muro Monumental Jaguar Tiwanaku" data-location="La Paz, Bolivia" data-img="assets/images/proyecto-escultura.jpg" data-desc="Altorrelieve tallado en piedra de motivo andino-amazónico con musgo vivo y sendero mirador.">
+            <img src="assets/images/proyecto-escultura.jpg" alt="Muro Monumental Jaguar Tiwanaku" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Tematizaciones</span>
+              <h4>Muro Monumental Jaguar</h4>
+              <p><i class="fa-solid fa-location-dot"></i> La Paz, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Jardín Tropical -->
+          <div class="gallery-item" data-category="jardines" data-title="Jardín Botánico Residencial" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-jardin.jpg" data-desc="Paisajismo con arquería en piedra labrada, fuente clásica y flora tropical.">
+            <img src="assets/images/proyecto-jardin.jpg" alt="Jardín Botánico Residencial" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Jardines</span>
+              <h4>Jardín Botánico Residencial</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Restaurante Temático -->
+          <div class="gallery-item" data-category="tematizaciones" data-title="Cueva Ancestral Lounge" data-location="La Paz, Bolivia" data-img="assets/images/proyecto-restaurante.jpg" data-desc="Arquitectura de caverna con estatuas talladas y acústica diseñada para el confort gastronómico.">
+            <img src="assets/images/proyecto-restaurante.jpg" alt="Cueva Ancestral Lounge" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Tematizaciones</span>
+              <h4>Cueva Ancestral Lounge</h4>
+              <p><i class="fa-solid fa-location-dot"></i> La Paz, Bolivia</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN ATRACTIVA: SIMULADOR DE PROYECTO INTERACTIVO -->
+    <section class="simulator-section" id="simulador">
+      <div class="section-container">
+        
+        <div class="section-header center">
+          <span class="section-badge-gold">HERRAMIENTA INTERACTIVA</span>
+          <h2 class="section-title-dark">DISEÑA Y COTIZA TU PROYECTO EN 3 PASOS</h2>
+          <p class="section-lead">Selecciona las características de tu sueño y obtén una propuesta técnica al instante.</p>
+        </div>
+
+        <div class="simulator-card">
+          <!-- Step 1: Type -->
+          <div class="sim-step">
+            <div class="sim-step-title">
+              <span class="step-num">1</span>
+              <span>¿Qué tipo de espacio deseas transformar?</span>
+            </div>
+            <div class="sim-options-grid" id="sim-type-group">
+              <button type="button" class="sim-opt-btn active" data-type="Piscina Natural de Roca" data-icon="water">
+                <i class="fa-solid fa-water"></i>
+                <span class="opt-name">Piscina Natural</span>
+                <span class="opt-desc">Bio-laguna sin químicos</span>
+              </button>
+              <button type="button" class="sim-opt-btn" data-type="Cascada & Spa Exterior" data-icon="spa">
+                <i class="fa-solid fa-spa"></i>
+                <span class="opt-name">Cascada & Jacuzzi</span>
+                <span class="opt-desc">Caída de agua climatizada</span>
+              </button>
+              <button type="button" class="sim-opt-btn" data-type="Caverna / Parque Temático" data-icon="mountain">
+                <i class="fa-solid fa-mountain"></i>
+                <span class="opt-name">Caverna Temática</span>
+                <span class="opt-desc">Cueva, gruta y estatuas</span>
+              </button>
+              <button type="button" class="sim-opt-btn" data-type="Jardín y Paisajismo" data-icon="tree">
+                <i class="fa-solid fa-tree"></i>
+                <span class="opt-name">Paisajismo y Arcos</span>
+                <span class="opt-desc">Senderos, puentes y flora</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Size & Location -->
+          <div class="sim-step">
+            <div class="sim-step-title">
+              <span class="step-num">2</span>
+              <span>Dimensiones y Ubicación</span>
+            </div>
+            <div class="sim-inputs-row">
+              <div class="sim-field">
+                <label for="sim-scale">Escala del Terreno</label>
+                <select id="sim-scale">
+                  <option value="Residencial Compacto (20 a 50 m²)">Residencial Compacto (20 a 50 m²)</option>
+                  <option value="Residencial Amplio / Quinta (50 a 150 m²)" selected>Residencial Amplio / Quinta (50 a 150 m²)</option>
+                  <option value="Propiedad Grande / Hotel Resort (+150 m²)">Propiedad Grande / Hotel Resort (+150 m²)</option>
+                </select>
+              </div>
+              <div class="sim-field">
+                <label for="sim-city">Ciudad / Departamento</label>
+                <select id="sim-city">
+                  <option value="Santa Cruz" selected>Santa Cruz (Urubó, Las Palmas, etc.)</option>
+                  <option value="Cochabamba">Cochabamba</option>
+                  <option value="La Paz">La Paz</option>
+                  <option value="Tarija">Tarija</option>
+                  <option value="Sucre">Sucre</option>
+                  <option value="Otro Departamento">Otro Departamento en Bolivia</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Extras -->
+          <div class="sim-step">
+            <div class="sim-step-title">
+              <span class="step-num">3</span>
+              <span>Elementos Especiales Incluidos</span>
+            </div>
+            <div class="sim-checkboxes-grid">
+              <label class="sim-check-label">
+                <input type="checkbox" id="extra-lights" checked>
+                <span class="custom-check"></span>
+                <span>Iluminación LED sumergible y antorchas</span>
+              </label>
+              <label class="sim-check-label">
+                <input type="checkbox" id="extra-cave" checked>
+                <span class="custom-check"></span>
+                <span>Gruta / cueva de paso con asientos</span>
+              </label>
+              <label class="sim-check-label">
+                <input type="checkbox" id="extra-bio" checked>
+                <span class="custom-check"></span>
+                <span>Sistema de regeneración biológica (sin cloro)</span>
+              </label>
+              <label class="sim-check-label">
+                <input type="checkbox" id="extra-render">
+                <span class="custom-check"></span>
+                <span>Render arquitectónico 3D hiperrealista</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Result & WhatsApp Action Box -->
+          <div class="sim-result-box">
+            <div class="result-info">
+              <span class="result-tag">Configuración Seleccionada</span>
+              <h4 id="result-summary-title">Piscina Natural de Roca + Cascada</h4>
+              <p id="result-summary-details">Residencial Amplio en Santa Cruz con iluminación nocturna y sistema bio.</p>
+            </div>
+            <button type="button" class="btn-send-sim-whatsapp" id="btn-send-sim">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Consultar Presupuesto Exacto por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN ATRACTIVA: TESTIMONIOS Y CLIENTES SATISFECHOS -->
+    <section class="testimonials-section" id="testimonios">
+      <div class="section-container">
+        <div class="section-header center">
+          <span class="section-badge-green">CONFIANZA Y PRESTIGIO</span>
+          <h2 class="section-title-dark">LO QUE DICEN NUESTROS CLIENTES</h2>
+          <p class="section-lead">Familias y empresarios hoteleros que confiaron su paraíso privado a Rock Art.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonio 1 -->
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "Transformaron el jardín de nuestra casa en el Urubó en una verdadera laguna tropical con cascadas. El acabado de la roca es tan real que nuestros invitados no pueden creer que sea obra artificial."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-info">
+                <h4>Ing. Roberto Antelo</h4>
+                <span>Propietario Residencial - Urubó, Santa Cruz</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "Buscábamos una piscina biológica sin cloro para nuestro resort ecológico. El equipo de Rock Art diseñó el sistema de filtrado perfecto y los tiempos de entrega se cumplieron al 100%."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar"><i class="fa-solid fa-hotel"></i></div>
+              <div class="author-info">
+                <h4>Arq. Valeria Quiroga</h4>
+                <span>Directora Eco-Resort - Cochabamba</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">
+              "La tematización subterránea de nuestro restaurante en La Paz es el mayor atractivo. Los relieves prehispánicos y la cascada interna generan un ambiente mágico donde la gente hace fila para cenar."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar"><i class="fa-solid fa-utensils"></i></div>
+              <div class="author-info">
+                <h4>Carlos & Mariana Siles</h4>
+                <span>Restaurante Caverna Lounge - La Paz</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE ROCK ART SECTION (Con foto panorámica, textos y firma según boceto) -->
+    <section class="about-section" id="nosotros">
+      <div class="about-container">
+        
+        <!-- Left: Panoramic Mountain Image -->
+        <div class="about-image-column">
+          <div class="about-img-frame" data-tilt>
+            <img src="assets/images/mountain-panorama.jpg" alt="Cordillera Andina al atardecer - Inspiración Rock Art" class="about-panorama-img">
+            <div class="about-img-caption">
+              <span>Inspirados en la grandeza de los Andes y la Amazonía boliviana</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Text Content -->
+        <div class="about-content-column">
+          <h2 class="about-title">SOBRE <span class="highlight-green">ROCK ART</span></h2>
+          <div class="about-leaf-divider">
+            <span class="line"></span>
+            <i class="fa-solid fa-leaf"></i>
+            <span class="line"></span>
+          </div>
+          <p class="about-text">
+            Somos un equipo apasionado por la naturaleza, el arte y el diseño. Transformamos ideas en espacios reales, creando ambientes que combinan creatividad, funcionalidad y respeto por el entorno.
+          </p>
+          <p class="about-text-secondary">
+            Con años de trayectoria en Bolivia y Latinoamérica, somos especialistas en bio-construcción, réplica y moldeado de formaciones rocosas artificiales ultra-realistas, piscinas biológicas y tematizaciones temáticas de alto nivel arquitectónico.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">+85</span>
+              <span class="stat-label">Proyectos Realizados</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Roca Artesanal</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Años de Trayectoria</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Quote, Contour Emblem & Signature -->
+        <div class="about-quote-column">
+          <div class="about-emblem">
+            <svg viewBox="0 0 100 100" class="contour-emblem-svg">
+              <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="1"/>
+              <path d="M22 68L42 34L54 52L64 38L78 68H22Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M42 34L48 24L58 40" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M20 74C30 71 40 76 50 73C60 70 70 75 80 72" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+
+          <blockquote class="about-blockquote">
+            "Nuestro compromiso es dejar huella en cada proyecto y en cada experiencia."
+          </blockquote>
+
+          <div class="about-signature">
+            <span class="signature-script">Rock Art</span>
+            <span class="signature-sub">Estudio de Bio-Arquitectura</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COTIZACIÓN Y CONTACTO SECTION -->
+    <section class="contact-section" id="contacto">
+      <div class="section-container">
+        
+        <div class="section-header center">
+          <span class="section-badge-gold">ATENCIÓN PERSONALIZADA</span>
+          <h2 class="section-title-dark">INICIA TU PROYECTO CON NOSOTROS</h2>
+          <p class="section-lead">Cuéntanos tu visión. Diseñamos propuestas personalizadas para residencias, hoteles y centros turísticos.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-card-title">Solicitar Asesoría o Cotización</h3>
+            
+            <form id="quote-form" class="quote-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="client-name">Nombre Completo *</label>
+                  <input type="text" id="client-name" name="name" placeholder="Ej: Carlos Mendoza" required>
+                </div>
+                <div class="form-group">
+                  <label for="client-phone">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="client-phone" name="phone" placeholder="Ej: +591 7XXXXXXX" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="project-type">Tipo de Proyecto *</label>
+                  <select id="project-type" name="type" required>
+                    <option value="">Seleccione una opción...</option>
+                    <option value="Piscina Natural / Bio-Piscina">Piscina Natural / Bio-Piscina</option>
+                    <option value="Parque Temático / Eco-Resort">Parque Temático / Eco-Resort</option>
+                    <option value="Cascada Artificial / Spa de Roca">Cascada Artificial / Spa de Roca</option>
+                    <option value="Escultura o Fachada Tematizada">Escultura o Fachada Tematizada</option>
+                    <option value="Restaurante o Local Temático">Restaurante o Local Temático</option>
+                    <option value="Jardín Tropical y Paisajismo">Jardín Tropical y Paisajismo</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="project-city">Departamento / Ubicación *</label>
+                  <select id="project-city" name="city" required>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Tarija">Tarija</option>
+                    <option value="Sucre / Chuquisaca">Sucre / Chuquisaca</option>
+                    <option value="Beni">Beni</option>
+                    <option value="Pando">Pando</option>
+                    <option value="Oruro">Oruro</option>
+                    <option value="Potosí">Potosí</option>
+                    <option value="Internacional">Fuera de Bolivia</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="client-message">Detalles o Idea de tu Espacio</label>
+                <textarea id="client-message" name="message" rows="4" placeholder="Describe las medidas aproximadas, terreno, ideas que te gustaría incluir..."></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn-submit-whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Enviar Cotización por WhatsApp</span>
+                </button>
+              </div>
+
+              <p class="form-note">
+                <i class="fa-solid fa-shield-halved"></i> Respuesta garantizada en menos de 24 horas por nuestro equipo de diseño.
+              </p>
+            </form>
+          </div>
+
+          <!-- Contact Info Box -->
+          <div class="contact-details-card">
+            <h3 class="form-card-title">Información Directa</h3>
+            <p class="contact-details-intro">
+              Contáctanos directamente o visítanos en nuestro estudio central en Santa Cruz de la Sierra. Realizamos obras y proyectos a nivel nacional.
+            </p>
+
+            <div class="contact-info-list">
+              <a href="https://wa.me/59171234567" target="_blank" rel="noopener" class="contact-info-item">
+                <div class="info-icon whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">WhatsApp Directo</span>
+                  <span class="info-val">+591 712 34567</span>
+                </div>
+              </a>
+
+              <a href="mailto:rockart.proyectos@gmail.com" class="contact-info-item">
+                <div class="info-icon email">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Correo Electrónico</span>
+                  <span class="info-val">rockart.proyectos@gmail.com</span>
+                </div>
+              </a>
+
+              <div class="contact-info-item">
+                <div class="info-icon location">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Ubicación</span>
+                  <span class="info-val">Santa Cruz de la Sierra - Bolivia</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="info-icon hours">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Horario de Atención</span>
+                  <span class="info-val">Lunes a Sábado: 08:00 - 19:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-share-box">
+              <span class="social-share-title">Síguenos en Redes</span>
+              <div class="social-share-icons">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/59171234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER STRIP SEGÚN EL BOCETO -->
+  <footer class="site-footer">
+    <div class="footer-contact-strip">
+      <div class="strip-container">
+        
+        <!-- Teléfono / WhatsApp -->
+        <a href="https://wa.me/59171234567" target="_blank" rel="noopener" class="strip-item">
+          <i class="fa-brands fa-whatsapp strip-icon"></i>
+          <span>+591 712 34567</span>
+        </a>
+
+        <span class="strip-dot">•</span>
+
+        <!-- Email -->
+        <a href="mailto:rockart.proyectos@gmail.com" class="strip-item">
+          <i class="fa-regular fa-envelope strip-icon"></i>
+          <span>rockart.proyectos@gmail.com</span>
+        </a>
+
+        <span class="strip-dot">•</span>
+
+        <!-- Ubicación -->
+        <div class="strip-item">
+          <i class="fa-solid fa-location-dot strip-icon"></i>
+          <span>Santa Cruz de la Sierra - Bolivia</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Copyright Sub-Footer -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2026 Rock Art - Bio-Arquitectura y Paisajismo en Roca. Todos los derechos reservados.</p>
+        <p class="footer-designer">Diseñado con excelencia artesanal y realismo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL PARA FOTOGRAFÍAS -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista">&times;</button>
+      <div class="lightbox-media">
+        <img src="" alt="" id="lightbox-img">
+      </div>
+      <div class="lightbox-details">
+        <div class="lightbox-header">
+          <h3 id="lightbox-title">Título del Proyecto</h3>
+          <span class="lightbox-location" id="lightbox-location"><i class="fa-solid fa-location-dot"></i> Ubicación</span>
+        </div>
+        <p id="lightbox-desc">Descripción del proyecto</p>
+        <div class="lightbox-action">
+          <a href="#simulador" class="btn-lightbox-quote" id="lightbox-quote-btn">Cotizar Proyecto Similar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON WITH QUICK PROMPT -->
+  <div class="floating-whatsapp-container">
+    <a href="https://wa.me/59171234567?text=Hola%20Rock%20Art,%20estoy%20viendo%20su%20página%20web%20y%20me%20gustaría%20cotizar%20un%20proyecto" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="floating-badge-online"></span>
+    </a>
+    <div class="floating-bubble">
+      <span>¿En qué espacio sueñas construir tu oasis? 🌿</span>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
