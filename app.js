@@ -153,6 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (baContainer && baResize && baHandle) {
     let isDragging = false;
 
+    const baBeforeImg = baResize.querySelector('.ba-before');
+
     const updateSlider = (clientX) => {
       const rect = baContainer.getBoundingClientRect();
       let offsetX = clientX - rect.left;
@@ -163,7 +165,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const percentage = (offsetX / rect.width) * 100;
       baResize.style.width = `${percentage}%`;
       baHandle.style.left = `${percentage}%`;
+
+      if (baBeforeImg) {
+        baBeforeImg.style.width = `${rect.width}px`;
+      }
     };
+
+    const syncBeforeImageWidth = () => {
+      const rect = baContainer.getBoundingClientRect();
+      if (baBeforeImg) {
+        baBeforeImg.style.width = `${rect.width}px`;
+      }
+    };
+
+    window.addEventListener('resize', syncBeforeImageWidth);
+    syncBeforeImageWidth();
 
     // Mouse Events
     baContainer.addEventListener('mousedown', (e) => {
