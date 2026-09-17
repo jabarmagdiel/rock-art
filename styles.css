@@ -1541,7 +1541,56 @@ button {
   transition: transform 0.6s ease;
 }
 
-.gallery-item:hover img {
+.gallery-video-preview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-video-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.video-play-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(12, 22, 14, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #52c41a;
+  border: 1px solid rgba(82, 196, 26, 0.4);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.video-play-badge i {
+  font-size: 0.68rem;
+  color: #ffffff;
+}
+
+.gallery-item:hover .video-play-badge {
+  background: var(--green-primary);
+  color: #ffffff;
+  border-color: #52c41a;
+  box-shadow: 0 0 15px rgba(82, 196, 26, 0.7);
+}
+
+.gallery-item:hover img,
+.gallery-item:hover .gallery-video-preview video {
   transform: scale(1.08);
 }
 

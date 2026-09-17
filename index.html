@@ -49,7 +49,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="styles.css?v=2.6">
+  <link rel="stylesheet" href="styles.css?v=3.0">
 
   <!-- Schema.org Datos Estructurados para Google (Muestra el Logo y Datos de la Empresa en Google Search) -->
   <script type="application/ld+json">
@@ -620,6 +620,7 @@
           <!-- Category Filter Tabs -->
           <div class="filter-tabs">
             <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="videos"><i class="fa-solid fa-play"></i> Videos & Dron</button>
             <button class="filter-btn" data-filter="piscinas">Piscinas y Parques Acuáticos</button>
             <button class="filter-btn" data-filter="tematizaciones">Esculturas y Tematizaciones</button>
             <button class="filter-btn" data-filter="cascadas">Ingeniería e Hidráulica</button>
@@ -629,8 +630,74 @@
 
         <div class="gallery-grid" id="gallery-grid">
           
-          <!-- CATEGRORÍA 1: PISCINAS Y PARQUES ACUÁTICOS (4 Items) -->
-          <!-- Item 1: Campo Bello -->
+          <!-- ITEM DESTACADO 1: VUELO AÉREO CON DRON (Video de Obra) -->
+          <div class="gallery-item gallery-item-video" data-category="cascadas videos" data-video="assets/videos/drone-obra-vuelo.mp4" data-title="Vuelo con Dron: Excavación & Bio-Laguna" data-location="Bolivia" data-img="assets/images/galeria-drone-vuelo.jpg" data-desc="Filmación aérea profesional con dron que documenta el replanteo topográfico, movimiento de tierras y conformación de una monumental bio-piscina y laguna artificial con maquinaria pesada.">
+            <div class="gallery-video-preview">
+              <video src="assets/videos/drone-obra-vuelo.mp4" poster="assets/images/galeria-drone-vuelo.jpg" muted loop playsinline autoplay preload="metadata"></video>
+              <div class="video-play-badge"><i class="fa-solid fa-play"></i> Vuelo Dron</div>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag"><i class="fa-solid fa-drone"></i> Video Dron Aéreo</span>
+              <h4>Vuelo Dron: Bio-Laguna en Obra</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia · Movimiento de Tierras</p>
+            </div>
+          </div>
+
+          <!-- ITEM DESTACADO 2: CASCADA RESIDENCIAL EN VIDEO -->
+          <div class="gallery-item gallery-item-video" data-category="cascadas videos" data-video="assets/videos/cascada-interior.mp4" data-title="Cascada Interior & Muro Verde Iluminado" data-location="Residencia Privada, Bolivia" data-img="assets/images/galeria-cascada-interior.jpg" data-desc="Cascada vertical en roca esculpida a mano con jardines colgantes, iluminación subacuática bioluminiscente y circuito de recirculación silenciosa para residencia de lujo.">
+            <div class="gallery-video-preview">
+              <video src="assets/videos/cascada-interior.mp4" poster="assets/images/galeria-cascada-interior.jpg" muted loop playsinline autoplay preload="metadata"></video>
+              <div class="video-play-badge"><i class="fa-solid fa-play"></i> Video HD</div>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag"><i class="fa-solid fa-video"></i> Video en Vivo</span>
+              <h4>Cascada Interior & Muro Verde</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Residencia Privada, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM NUEVO 3: Pasarela Rústica en Faux-Bois -->
+          <div class="gallery-item" data-category="jardines" data-title="Pasarela Rústica en Faux-Bois sobre Laguna" data-location="Bolivia" data-img="assets/images/galeria-puente-pasarela.jpg" data-desc="Puente peatonal con barandas modeladas en hormigón símil madera (faux-bois) y piso de losas de piedra que atraviesa una laguna natural.">
+            <img src="assets/images/galeria-puente-pasarela.jpg" alt="Pasarela rústica en faux-bois sobre laguna" loading="lazy" width="1200" height="675">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Faux-Bois & Puentes</span>
+              <h4>Pasarela Rústica sobre Laguna</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM NUEVO 4: Cascada Monolítica Iluminada -->
+          <div class="gallery-item" data-category="cascadas" data-title="Cascada Monolítica Iluminada en Roca Viva" data-location="Bolivia" data-img="assets/images/galeria-fuente-monolito.jpg" data-desc="Gran monolito escultórico tallado a mano con fisuras geológicas, estanque perimetral y sistema de iluminación subacuática para paisajismo nocturno.">
+            <img src="assets/images/galeria-fuente-monolito.jpg" alt="Cascada monolítica iluminada en roca viva" loading="lazy" width="1200" height="675">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Fuentes & Cascadas</span>
+              <h4>Cascada Monolítica Iluminada</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM NUEVO 5: Escultura de León Guardián -->
+          <div class="gallery-item" data-category="tematizaciones" data-title="Escultura León Guardián en Roca Esculpida" data-location="Bolivia" data-img="assets/images/galeria-leon-guardian.jpg" data-desc="Escultura monumental de león tallada artesanalmente en mortero reforzado sobre peana rocosa, diseñada para acceso a complejo recreativo.">
+            <img src="assets/images/galeria-leon-guardian.jpg" alt="Escultura de león guardián en piedra esculpida" loading="lazy" width="1200" height="675">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Escultura Temática</span>
+              <h4>Escultura León Guardián</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM NUEVO 6: Cabaña & Mobiliario Faux-Bois -->
+          <div class="gallery-item" data-category="jardines" data-title="Cabaña & Mobiliario en Concreto Símil Madera" data-location="Bolivia" data-img="assets/images/galeria-cabana-fauxbois.jpg" data-desc="Área social con cabaña de techo rústico y juego de mesa central y bancas curvas esculpidas como troncos centenarios en concreto de alta resistencia.">
+            <img src="assets/images/galeria-cabana-fauxbois.jpg" alt="Cabaña y mesa tronco en hormigón símil madera" loading="lazy" width="1200" height="675">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Mobiliario Faux-Bois</span>
+              <h4>Mobiliario Tronco en Concreto</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- CATEGRORÍA 1: PISCINAS Y PARQUES ACUÁTICOS -->
+          <!-- Item: Campo Bello -->
           <div class="gallery-item" data-category="piscinas" data-title="Parque Acuático Campo Bello" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-parque.jpg" data-desc="Complejo acuático integral con toboganes en troncos esculpidos, cavernas de roca con jardineras vivas y piscina biológica de borde rústico.">
             <img src="assets/images/proyecto-parque.jpg" alt="Parque Acuático Campo Bello en Santa Cruz" loading="lazy" width="1200" height="675">
             <div class="gallery-item-overlay">
@@ -1096,6 +1163,7 @@
       <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista">&times;</button>
       <div class="lightbox-media">
         <img src="" alt="" id="lightbox-img">
+        <video id="lightbox-video" controls playsinline style="display: none; max-width: 100%; max-height: 75vh; border-radius: 8px; width: 100%; background: #000;"></video>
       </div>
       <div class="lightbox-details">
         <div class="lightbox-header">
@@ -1126,6 +1194,6 @@
   </div>
 
   <!-- Main JavaScript Logic -->
-  <script src="app.js?v=2.5"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>

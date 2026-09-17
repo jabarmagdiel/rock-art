@@ -397,9 +397,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterValue = btn.getAttribute('data-filter');
 
       galleryItems.forEach(item => {
-        const itemCategory = item.getAttribute('data-category');
+        const itemCategory = item.getAttribute('data-category') || '';
+        const matches = filterValue === 'all' || itemCategory.split(' ').includes(filterValue);
 
-        if (filterValue === 'all' || itemCategory === filterValue) {
+        if (matches) {
           item.style.display = 'block';
           setTimeout(() => {
             item.style.opacity = '1';
@@ -421,14 +422,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxBackdrop = document.getElementById('lightbox-backdrop');
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxVideo = document.getElementById('lightbox-video');
   const lightboxTitle = document.getElementById('lightbox-title');
   const lightboxLocation = document.getElementById('lightbox-location');
   const lightboxDesc = document.getElementById('lightbox-desc');
   const lightboxQuoteBtn = document.getElementById('lightbox-quote-btn');
 
-  const openLightbox = (imgSrc, title, location, desc) => {
-    lightboxImg.src = imgSrc;
-    lightboxImg.alt = title;
+  const openLightbox = (imgSrc, title, location, desc, videoSrc) => {
+    if (videoSrc) {
+      if (lightboxImg) lightboxImg.style.display = 'none';
+      if (lightboxVideo) {
+        lightboxVideo.style.display = 'block';
+        lightboxVideo.src = videoSrc;
+        lightboxVideo.play().catch(() => {});
+      }
+    } else {
+      if (lightboxVideo) {
+        lightboxVideo.pause();
+        lightboxVideo.src = '';
+        lightboxVideo.style.display = 'none';
+      }
+      if (lightboxImg) {
+        lightboxImg.style.display = 'block';
+        lightboxImg.src = imgSrc;
+        lightboxImg.alt = title;
+      }
+    }
     lightboxTitle.textContent = title;
     lightboxLocation.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${location}`;
     lightboxDesc.textContent = desc || 'Proyecto desarrollado con bio-construcción y roca artesanal por Rock Art.';
@@ -438,6 +457,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const closeLightboxModal = () => {
+    if (lightboxVideo) {
+      lightboxVideo.pause();
+      lightboxVideo.src = '';
+    }
     lightboxModal.classList.remove('active');
     lightboxModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
@@ -459,7 +482,8 @@ document.addEventListener('DOMContentLoaded', () => {
         card.getAttribute('data-img'),
         card.getAttribute('data-title'),
         card.getAttribute('data-location'),
-        card.getAttribute('data-desc')
+        card.getAttribute('data-desc'),
+        card.getAttribute('data-video')
       );
     });
   });
@@ -470,7 +494,8 @@ document.addEventListener('DOMContentLoaded', () => {
         item.getAttribute('data-img'),
         item.getAttribute('data-title'),
         item.getAttribute('data-location'),
-        item.getAttribute('data-desc')
+        item.getAttribute('data-desc'),
+        item.getAttribute('data-video')
       );
     });
   });
