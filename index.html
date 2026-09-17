@@ -323,11 +323,11 @@
           </div>
         </div>
 
-        <!-- 4 Services Columns Grid -->
+        <!-- 4 Services Columns Grid con Paleta Natural Diversificada -->
         <div class="services-grid">
           
-          <!-- Servicio 1: NATURALEZA -->
-          <div class="service-card" data-tilt>
+          <!-- Servicio 1: NATURALEZA (Acento Esmeralda) -->
+          <div class="service-card service-nature" data-tilt>
             <div class="service-icon-box">
               <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M8 52L26 22L36 38L42 28L56 52H8Z" />
@@ -348,8 +348,8 @@
 
           <div class="service-divider-vertical"></div>
 
-          <!-- Servicio 2: DISEÑO -->
-          <div class="service-card" data-tilt>
+          <!-- Servicio 2: DISEÑO (Acento Oro Cálido & Ámbar) -->
+          <div class="service-card service-design" data-tilt>
             <div class="service-icon-box">
               <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 14L46 42M26 10L14 22L22 30L34 18Z" />
@@ -363,14 +363,14 @@
             </p>
             <div class="card-feature-pill">Modelado 3D previo</div>
             <div class="card-leaf-ornament">
-              <i class="fa-solid fa-leaf"></i>
+              <i class="fa-solid fa-compass-drafting"></i>
             </div>
           </div>
 
           <div class="service-divider-vertical"></div>
 
-          <!-- Servicio 3: TEMATIZACIONES -->
-          <div class="service-card" data-tilt>
+          <!-- Servicio 3: TEMATIZACIONES (Acento Terracota & Piedra Arenisca) -->
+          <div class="service-card service-theming" data-tilt>
             <div class="service-icon-box">
               <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 48L24 16L48 12L54 44L34 52Z" />
@@ -386,14 +386,14 @@
             </p>
             <div class="card-feature-pill">Escultura artesanal</div>
             <div class="card-leaf-ornament">
-              <i class="fa-solid fa-leaf"></i>
+              <i class="fa-solid fa-gem"></i>
             </div>
           </div>
 
           <div class="service-divider-vertical"></div>
 
-          <!-- Servicio 4: EXPERIENCIA -->
-          <div class="service-card" data-tilt>
+          <!-- Servicio 4: EXPERIENCIA (Acento Azul Turquesa / Agua Cristalina) -->
+          <div class="service-card service-experience" data-tilt>
             <div class="service-icon-box">
               <svg viewBox="0 0 64 64" class="service-svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M32 54V24" />
@@ -408,7 +408,7 @@
             </p>
             <div class="card-feature-pill">Sensación resort 5★</div>
             <div class="card-leaf-ornament">
-              <i class="fa-solid fa-leaf"></i>
+              <i class="fa-solid fa-water"></i>
             </div>
           </div>
 
@@ -963,14 +963,18 @@
   </div>
 
   <!-- FLOATING WHATSAPP BUTTON WITH QUICK PROMPT -->
-  <div class="floating-whatsapp-container">
+  <div class="floating-whatsapp-container" id="whatsapp-widget">
+    <div class="floating-bubble" id="whatsapp-bubble">
+      <button type="button" class="bubble-close-btn" id="bubble-close-btn" aria-label="Cerrar">&times;</button>
+      <div class="bubble-content">
+        <span class="bubble-status"><span class="status-dot"></span> En línea · Asesoría Inmediata</span>
+        <p class="bubble-text">¿En qué espacio sueñas construir tu oasis? 🌿</p>
+      </div>
+    </div>
     <a href="https://wa.me/59171234567?text=Hola%20Rock%20Art,%20estoy%20viendo%20su%20página%20web%20y%20me%20gustaría%20cotizar%20un%20proyecto" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
       <span class="floating-badge-online"></span>
     </a>
-    <div class="floating-bubble">
-      <span>¿En qué espacio sueñas construir tu oasis? 🌿</span>
-    </div>
   </div>
 
   <!-- Main JavaScript Logic -->

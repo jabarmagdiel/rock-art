@@ -17,14 +17,21 @@
   --text-cream-body: #495a49;
   --cream-divider: #cfc8bd;
 
-  /* Colores de Acento y Naturaleza */
-  --green-primary: #5ea63e;
-  --green-light: #76c751;
-  --green-dark: #376423;
-  --green-glow: rgba(94, 166, 62, 0.45);
-  --gold-accent: #c6a256;
-  --gold-light: #e0be77;
-  --gold-glow: rgba(198, 162, 86, 0.35);
+  /* Colores de Acento y Naturaleza Diversificada (Bio-Arquitectura) */
+  --green-primary: #48bb78;
+  --green-light: #68d391;
+  --green-dark: #276749;
+  --green-glow: rgba(72, 187, 120, 0.45);
+  --gold-accent: #d4af37;
+  --gold-light: #f3d47b;
+  --gold-dark: #996515;
+  --gold-glow: rgba(212, 175, 55, 0.35);
+  --stone-terracotta: #c86432;
+  --stone-clay: #9c4118;
+  --stone-glow: rgba(200, 100, 50, 0.35);
+  --water-aqua: #0ea5e9;
+  --water-cyan: #0284c7;
+  --water-glow: rgba(14, 165, 233, 0.35);
 
   /* Textos */
   --text-white: #ffffff;
@@ -276,7 +283,7 @@ button {
   transform: translateX(-50%);
   width: 0;
   height: 2.5px;
-  background-color: var(--green-primary);
+  background-color: var(--gold-accent);
   border-radius: 2px;
   transition: var(--transition-smooth);
 }
@@ -290,7 +297,8 @@ button {
 }
 
 .nav-link.active {
-  color: var(--green-light);
+  color: var(--gold-light);
+  text-shadow: 0 0 12px var(--gold-glow);
 }
 
 .nav-link.highlight-link {
@@ -744,22 +752,22 @@ button {
 }
 
 .section-badge-cream {
-  background: rgba(94, 166, 62, 0.15);
-  color: #2b4928;
-  border: 1px solid rgba(94, 166, 62, 0.35);
+  background: rgba(184, 134, 11, 0.12);
+  color: #7d5a00;
+  border: 1px solid rgba(184, 134, 11, 0.35);
   box-shadow: none;
 }
 
 .section-badge-green {
-  background: rgba(94, 166, 62, 0.15);
-  color: #7bd355;
-  border: 1px solid rgba(123, 211, 85, 0.35);
+  background: rgba(72, 187, 120, 0.15);
+  color: #48bb78;
+  border: 1px solid rgba(72, 187, 120, 0.35);
 }
 
 .section-badge-gold {
-  background: rgba(198, 162, 86, 0.15);
-  color: #f0cb7e;
-  border: 1px solid rgba(198, 162, 86, 0.4);
+  background: rgba(212, 175, 55, 0.15);
+  color: #f3d47b;
+  border: 1px solid rgba(212, 175, 55, 0.4);
 }
 
 .section-title-cream {
@@ -784,11 +792,11 @@ button {
 .ornament-line {
   width: 60px;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, #5f755c, transparent);
+  background: linear-gradient(90deg, transparent, #8a7a58, transparent);
 }
 
 .ornament-leaf {
-  color: #4a6747;
+  color: #b8860b;
   font-size: 0.95rem;
 }
 
@@ -803,43 +811,36 @@ button {
 .service-card {
   flex: 1;
   text-align: center;
-  padding: 24px 22px;
+  padding: 26px 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: var(--transition-smooth);
   position: relative;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 14px 30px rgba(45, 60, 42, 0.12);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .service-icon-box {
-  width: 70px;
-  height: 70px;
+  width: 72px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  color: #3b5538;
+  margin-bottom: 18px;
   transition: var(--transition-smooth);
 }
 
 .service-svg {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   transition: var(--transition-smooth);
 }
 
 .service-card:hover .service-icon-box {
-  color: var(--green-dark);
-  transform: scale(1.15) rotate(3deg);
+  transform: scale(1.12) rotate(3deg);
 }
 
 .service-title {
@@ -847,7 +848,7 @@ button {
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: #243523;
+  color: #1e2a1d;
   margin-bottom: 12px;
 }
 
@@ -863,26 +864,114 @@ button {
 .card-feature-pill {
   font-size: 0.72rem;
   font-weight: 700;
-  color: #345731;
-  background: rgba(69, 114, 63, 0.12);
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 15px;
   margin-bottom: 14px;
   letter-spacing: 0.04em;
+  transition: var(--transition-smooth);
 }
 
 .card-leaf-ornament {
-  color: #728a70;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   margin-top: auto;
-  opacity: 0.8;
+  opacity: 0.75;
   transition: var(--transition-smooth);
 }
 
 .service-card:hover .card-leaf-ornament {
-  color: var(--green-dark);
   transform: scale(1.25);
   opacity: 1;
+}
+
+/* =======================================================
+   ESTILOS DIVERSIFICADOS POR SERVICIO (NO MONÓTONO VERDE)
+   ======================================================= */
+/* 1. Naturaleza & Bio-Piscinas (Esmeralda Bosque) */
+.service-card.service-nature {
+  border-top: 3px solid #2e7d32;
+}
+.service-card.service-nature .service-icon-box {
+  color: #2e7d32;
+}
+.service-card.service-nature .card-feature-pill {
+  color: #1b5e20;
+  background: rgba(46, 125, 50, 0.12);
+  border: 1px solid rgba(46, 125, 50, 0.28);
+}
+.service-card.service-nature .card-leaf-ornament {
+  color: #2e7d32;
+}
+.service-card.service-nature:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px rgba(46, 125, 50, 0.18);
+  border-color: rgba(46, 125, 50, 0.4);
+}
+
+/* 2. Diseño Arquitectónico & 3D (Oro Cálido / Ámbar) */
+.service-card.service-design {
+  border-top: 3px solid #b8860b;
+}
+.service-card.service-design .service-icon-box {
+  color: #b8860b;
+}
+.service-card.service-design .card-feature-pill {
+  color: #7d5a00;
+  background: rgba(184, 134, 11, 0.13);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+.service-card.service-design .card-leaf-ornament {
+  color: #b8860b;
+}
+.service-card.service-design:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px rgba(184, 134, 11, 0.2);
+  border-color: rgba(184, 134, 11, 0.45);
+}
+
+/* 3. Tematizaciones & Escultura (Terracota / Piedra Esculpida) */
+.service-card.service-theming {
+  border-top: 3px solid #c85a27;
+}
+.service-card.service-theming .service-icon-box {
+  color: #c85a27;
+}
+.service-card.service-theming .card-feature-pill {
+  color: #8c3810;
+  background: rgba(200, 90, 39, 0.12);
+  border: 1px solid rgba(200, 90, 39, 0.28);
+}
+.service-card.service-theming .card-leaf-ornament {
+  color: #c85a27;
+}
+.service-card.service-theming:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px rgba(200, 90, 39, 0.18);
+  border-color: rgba(200, 90, 39, 0.4);
+}
+
+/* 4. Experiencia Sensorial (Azul Turquesa / Agua Cristalina) */
+.service-card.service-experience {
+  border-top: 3px solid #0284c7;
+}
+.service-card.service-experience .service-icon-box {
+  color: #0284c7;
+}
+.service-card.service-experience .card-feature-pill {
+  color: #0369a1;
+  background: rgba(2, 132, 199, 0.12);
+  border: 1px solid rgba(2, 132, 199, 0.28);
+}
+.service-card.service-experience .card-leaf-ornament {
+  color: #0284c7;
+}
+.service-card.service-experience:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.2);
+  border-color: rgba(2, 132, 199, 0.4);
 }
 
 /* Divisores verticales sutiles entre servicios */
@@ -2496,16 +2585,105 @@ button {
   position: fixed;
   bottom: 28px;
   right: 28px;
-  z-index: 998;
+  z-index: 999;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 14px;
 }
 
+.floating-bubble {
+  position: relative;
+  background: #ffffff;
+  color: #1a2a1c;
+  padding: 12px 28px 12px 16px;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  max-width: 280px;
+  animation: floatSubtle 4s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Flecha decorativa del globo apuntando hacia el botón de WhatsApp a la derecha */
+.floating-bubble::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 8px solid #ffffff;
+}
+
+.bubble-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bubble-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #128c7e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px #25d366;
+  animation: blinkStatus 2s infinite ease-in-out;
+}
+
+@keyframes blinkStatus {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.bubble-text {
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #223324;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bubble-close-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  font-size: 1.15rem;
+  color: #889988;
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 4px;
+  transition: color 0.2s ease;
+}
+
+.bubble-close-btn:hover {
+  color: #222222;
+}
+
 .floating-whatsapp {
   position: relative;
-  width: 62px;
-  height: 62px;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
   border-radius: 50%;
   background: #25d366;
   color: #ffffff;
@@ -2513,8 +2691,24 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 2.1rem;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
-  transition: var(--transition-smooth);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-whatsapp::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  z-index: -1;
+  animation: pulseWhatsAppRing 2.2s infinite ease-out;
+}
+
+@keyframes pulseWhatsAppRing {
+  0% { transform: scale(0.95); opacity: 0.85; }
+  100% { transform: scale(1.45); opacity: 0; }
 }
 
 .floating-badge-online {
@@ -2531,19 +2725,6 @@ button {
 .floating-whatsapp:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 32px rgba(37, 211, 102, 0.7);
-}
-
-.floating-bubble {
-  background: rgba(14, 25, 16, 0.95);
-  color: #ffffff;
-  padding: 10px 18px;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  border: 1px solid rgba(94, 166, 62, 0.4);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-  animation: floatSubtle 3s ease-in-out infinite;
-  white-space: nowrap;
 }
 
 @keyframes floatSubtle {
@@ -3244,14 +3425,19 @@ button {
 
   /* Botón Flotante WhatsApp en Móvil */
   .floating-whatsapp-container {
-    bottom: 20px;
-    right: 20px;
+    bottom: 18px;
+    right: 18px;
+  }
+
+  .floating-bubble {
+    display: none !important;
   }
 
   .floating-whatsapp {
-    width: 52px;
-    height: 52px;
-    font-size: 1.7rem;
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    font-size: 1.75rem;
   }
 }
 

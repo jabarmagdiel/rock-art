@@ -544,4 +544,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // =========================================================================
+  // 10. Descartar Globo Flotante de WhatsApp
+  // =========================================================================
+  const bubbleCloseBtn = document.getElementById('bubble-close-btn');
+  const whatsappBubble = document.getElementById('whatsapp-bubble');
+  if (bubbleCloseBtn && whatsappBubble) {
+    bubbleCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      whatsappBubble.style.opacity = '0';
+      whatsappBubble.style.transform = 'scale(0.85)';
+      setTimeout(() => {
+        whatsappBubble.style.display = 'none';
+      }, 300);
+    });
+  }
 });
