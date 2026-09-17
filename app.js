@@ -144,6 +144,76 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
+  // 3.1. Hero Background Carousel (Transición Cinematográfica Automática)
+  // =========================================================================
+  const heroSlider = document.getElementById('hero-slider');
+  if (heroSlider) {
+    const slides = heroSlider.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    const prevBtn = document.getElementById('hero-prev');
+    const nextBtn = document.getElementById('hero-next');
+    let currentSlide = 0;
+    let slideTimer = null;
+    const SLIDE_DURATION = 5500; // 5.5 segundos por foto
+
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      currentSlide = index;
+    };
+
+    const nextSlide = () => {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    };
+
+    const prevSlide = () => {
+      const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prevIndex);
+    };
+
+    const startTimer = () => {
+      stopTimer();
+      slideTimer = setInterval(nextSlide, SLIDE_DURATION);
+    };
+
+    const stopTimer = () => {
+      if (slideTimer) clearInterval(slideTimer);
+    };
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        startTimer();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        startTimer();
+      });
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const target = parseInt(dot.getAttribute('data-slide'), 10);
+        if (!isNaN(target)) {
+          showSlide(target);
+          startTimer();
+        }
+      });
+    });
+
+    // Iniciar rotación automática de fondo
+    startTimer();
+  }
+
+  // =========================================================================
   // 4. Slider Interactivo Antes y Después
   // =========================================================================
   const baContainer = document.getElementById('before-after-slider');

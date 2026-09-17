@@ -482,23 +482,48 @@ button {
   padding: 140px 0 110px 0;
 }
 
+/* Hero Background Slider / Carrusel de Obras Reales */
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1);
+  transition: opacity 1.0s ease-in-out, transform 8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.07);
+}
+
 .hero-bg-media {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('assets/images/hero-bg.jpg');
+  background-image: url('assets/images/hero-slide-1.jpg');
   background-size: cover;
   background-position: center center;
-  animation: slowZoom 25s alternate infinite ease-in-out;
-  transform-origin: center center;
   z-index: 1;
-}
-
-@keyframes slowZoom {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
 }
 
 .hero-bg-overlay {
@@ -507,7 +532,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 30% 50%, rgba(7, 13, 8, 0.35) 0%, rgba(7, 13, 8, 0.75) 55%, rgba(7, 13, 8, 0.96) 100%);
+  background: radial-gradient(circle at 25% 45%, rgba(6, 12, 7, 0.3) 0%, rgba(6, 12, 7, 0.55) 55%, rgba(6, 12, 7, 0.78) 100%);
   z-index: 2;
 }
 
@@ -517,7 +542,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 130px rgba(0, 0, 0, 0.85);
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.55);
   z-index: 3;
   pointer-events: none;
 }
@@ -714,6 +739,119 @@ button {
   height: 45px;
   background: linear-gradient(to top, #09120a, transparent);
   z-index: 6;
+}
+
+/* Controles elegantes del carrusel de obras */
+.hero-carousel-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(10, 18, 12, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(82, 196, 26, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65), 0 0 20px rgba(82, 196, 26, 0.15);
+  margin-top: 25px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-carousel-arrow {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-carousel-arrow:hover {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.2);
+  transform: scale(1.12);
+}
+
+.hero-carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-dot {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: all 0.35s ease;
+}
+
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-dot .dot-indicator {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-dot .dot-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.65);
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.hero-dot.active {
+  background: rgba(82, 196, 26, 0.18);
+  border: 1px solid rgba(82, 196, 26, 0.4);
+}
+
+.hero-dot.active .dot-indicator {
+  width: 22px;
+  border-radius: 6px;
+  background: #52c41a;
+  box-shadow: 0 0 12px rgba(82, 196, 26, 0.9);
+}
+
+.hero-dot.active .dot-label {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hero-carousel-controls {
+    margin-top: 20px;
+    padding: 6px 14px;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-dot .dot-label {
+    display: none;
+  }
+  .hero-dot {
+    padding: 6px 8px;
+  }
+  .hero-dot.active .dot-indicator {
+    width: 18px;
+  }
 }
 
 /* ==========================================================================

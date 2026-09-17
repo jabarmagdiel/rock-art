@@ -49,7 +49,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2.6">
 
   <!-- Schema.org Datos Estructurados para Google (Muestra el Logo y Datos de la Empresa en Google Search) -->
   <script type="application/ld+json">
@@ -187,7 +187,12 @@
   <main>
     <!-- HERO SECTION WITH CINEMATIC ATMOSPHERE -->
     <section class="hero-section" id="inicio">
-      <div class="hero-bg-media"></div>
+      <!-- HERO BACKGROUND CAROUSEL (Obras Reales en Bolivia) -->
+      <div class="hero-slider" id="hero-slider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image: url('assets/images/hero-slide-1.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/hero-slide-2.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/hero-slide-3.jpg');"></div>
+      </div>
       <div class="hero-bg-overlay"></div>
       <div class="hero-vignette"></div>
 
@@ -248,6 +253,30 @@
             <i class="fa-solid fa-map-location-dot"></i>
             <span>Obras en Toda Bolivia</span>
           </div>
+        </div>
+
+        <!-- Controles elegantes del carrusel de fondo -->
+        <div class="hero-carousel-controls" aria-label="Controles de fotografías de obras">
+          <button class="hero-carousel-arrow prev" id="hero-prev" aria-label="Obra anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="hero-carousel-dots" id="hero-dots">
+            <button class="hero-dot active" data-slide="0" aria-label="Ver Cavernas y Toboganes">
+              <span class="dot-indicator"></span>
+              <span class="dot-label">Cavernas & Toboganes</span>
+            </button>
+            <button class="hero-dot" data-slide="1" aria-label="Ver Puente y Cascadas">
+              <span class="dot-indicator"></span>
+              <span class="dot-label">Puente & Cascadas</span>
+            </button>
+            <button class="hero-dot" data-slide="2" aria-label="Ver Parque Temático">
+              <span class="dot-indicator"></span>
+              <span class="dot-label">Parque Temático</span>
+            </button>
+          </div>
+          <button class="hero-carousel-arrow next" id="hero-next" aria-label="Obra siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
 
@@ -1097,6 +1126,6 @@
   </div>
 
   <!-- Main JavaScript Logic -->
-  <script src="app.js"></script>
+  <script src="app.js?v=2.5"></script>
 </body>
 </html>
