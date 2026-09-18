@@ -49,7 +49,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="styles.css?v=3.1">
+  <link rel="stylesheet" href="styles.css?v=3.2">
 
   <!-- Schema.org Datos Estructurados para Google (Muestra el Logo y Datos de la Empresa en Google Search) -->
   <script type="application/ld+json">
@@ -621,17 +621,17 @@
           <div class="filter-tabs">
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="videos"><i class="fa-solid fa-play"></i> Videos & Dron</button>
-            <button class="filter-btn" data-filter="piscinas">Piscinas y Parques Acuáticos</button>
-            <button class="filter-btn" data-filter="tematizaciones">Esculturas y Tematizaciones</button>
-            <button class="filter-btn" data-filter="cascadas">Ingeniería e Hidráulica</button>
-            <button class="filter-btn" data-filter="jardines">Paisajismo y Faux-Bois</button>
+            <button class="filter-btn" data-filter="piscinas">Piscinas & Parques</button>
+            <button class="filter-btn" data-filter="cascadas">Cascadas & Puentes</button>
+            <button class="filter-btn" data-filter="tematizaciones">Esculturas & Temática</button>
+            <button class="filter-btn" data-filter="jardines">Miradores & Faux-Bois</button>
           </div>
         </div>
 
         <div class="gallery-grid" id="gallery-grid">
           
           <!-- ITEM DESTACADO 1: VUELO AÉREO CON DRON (Video de Obra) -->
-          <div class="gallery-item gallery-item-video" data-category="cascadas videos" data-video="assets/videos/drone-obra-vuelo.mp4" data-title="Vuelo con Dron: Excavación & Bio-Laguna" data-location="Bolivia" data-img="assets/images/galeria-drone-vuelo.jpg" data-desc="Filmación aérea profesional con dron que documenta el replanteo topográfico, movimiento de tierras y conformación de una monumental bio-piscina y laguna artificial con maquinaria pesada.">
+          <div class="gallery-item gallery-item-video" data-category="piscinas cascadas videos" data-video="assets/videos/drone-obra-vuelo.mp4" data-title="Vuelo con Dron: Excavación & Bio-Laguna" data-location="Bolivia" data-img="assets/images/galeria-drone-vuelo.jpg" data-desc="Filmación aérea profesional con dron que documenta el replanteo topográfico, movimiento de tierras y conformación de una monumental bio-piscina y laguna artificial con maquinaria pesada.">
             <div class="gallery-video-preview">
               <video src="assets/videos/drone-obra-vuelo.mp4" poster="assets/images/galeria-drone-vuelo.jpg" muted loop playsinline autoplay preload="metadata"></video>
               <div class="video-play-badge"><i class="fa-solid fa-play"></i> Vuelo Dron</div>
@@ -656,206 +656,92 @@
             </div>
           </div>
 
-          <!-- ITEM NUEVO 3: Pasarela Rústica en Faux-Bois -->
-          <div class="gallery-item" data-category="jardines" data-title="Pasarela Rústica en Faux-Bois sobre Laguna" data-location="Bolivia" data-img="assets/images/galeria-puente-pasarela.jpg" data-desc="Puente peatonal con barandas modeladas en hormigón símil madera (faux-bois) y piso de losas de piedra que atraviesa una laguna natural.">
-            <img src="assets/images/galeria-puente-pasarela.jpg" alt="Pasarela rústica en faux-bois sobre laguna" loading="lazy" width="1200" height="675">
+          <!-- ITEM 1 (FOTO): Parque Acuático Campo Belo -->
+          <div class="gallery-item" data-category="piscinas tematizaciones" data-title="Parque Acuático Campo Belo" data-location="Santa Cruz, Bolivia" data-img="assets/images/galeria-campobelo-parque.jpg" data-desc="Gran parque acuático con toboganes tallados como troncos huecos en faux-bois, cavernas de roca con jardineras colgantes vivas y bio-piscina integral.">
+            <img src="assets/images/galeria-campobelo-parque.jpg" alt="Parque Acuático Campo Belo en Santa Cruz" loading="lazy" width="1120" height="504">
             <div class="gallery-item-overlay">
-              <span class="gallery-tag">Faux-Bois & Puentes</span>
-              <h4>Pasarela Rústica sobre Laguna</h4>
+              <span class="gallery-tag">Piscinas & Parques</span>
+              <h4>Parque Acuático Campo Belo</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 (FOTO): Puente Monumental & Cascadas Fluviales -->
+          <div class="gallery-item" data-category="cascadas" data-title="Puente de Piedra & Cascadas Fluviales" data-location="Bolivia" data-img="assets/images/galeria-puente-cascadas.jpg" data-desc="Puente peatonal arqueado en piedra tallada con encauzamiento de río, cascadas escalonadas y pozas naturales en entorno montañoso.">
+            <img src="assets/images/galeria-puente-cascadas.jpg" alt="Puente de piedra sobre río y cascadas naturales" loading="lazy" width="1599" height="1200">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Puentes & Cascadas</span>
+              <h4>Puente de Piedra & Cascadas</h4>
               <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
             </div>
           </div>
 
-          <!-- ITEM NUEVO 4: Cascada Monolítica Iluminada -->
-          <div class="gallery-item" data-category="cascadas" data-title="Cascada Monolítica Iluminada en Roca Viva" data-location="Bolivia" data-img="assets/images/galeria-fuente-monolito.jpg" data-desc="Gran monolito escultórico tallado a mano con fisuras geológicas, estanque perimetral y sistema de iluminación subacuática para paisajismo nocturno.">
-            <img src="assets/images/galeria-fuente-monolito.jpg" alt="Cascada monolítica iluminada en roca viva" loading="lazy" width="1200" height="675">
+          <!-- ITEM 3 (FOTO): Cascada Interior & Muro Vivo con Bromelias -->
+          <div class="gallery-item" data-category="cascadas" data-title="Cascada Interior & Muro Vivo con Bromelias" data-location="Residencia Privada, Bolivia" data-img="assets/images/galeria-cascada-interior-bromelias.jpg" data-desc="Muro de agua en roca viva tallada artesanalmente con microclima para bromelias tropicales, musgo vivo e iluminación subacuática cálida.">
+            <img src="assets/images/galeria-cascada-interior-bromelias.jpg" alt="Cascada interior con bromelias y roca tallada" loading="lazy" width="709" height="1599">
             <div class="gallery-item-overlay">
-              <span class="gallery-tag">Fuentes & Cascadas</span>
-              <h4>Cascada Monolítica Iluminada</h4>
+              <span class="gallery-tag">Cascadas de Interior</span>
+              <h4>Cascada & Jardín Vertical</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Residencia Privada, Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 (FOTO): Cascada Monolítica en Roca Viva sobre Estanque -->
+          <div class="gallery-item" data-category="cascadas" data-title="Cascada Monolítica en Roca Viva sobre Estanque" data-location="Bolivia" data-img="assets/images/galeria-cascada-monolito.jpg" data-desc="Fuente y cascada de tres niveles en peña de roca esculpida a mano con circuito cerrado de recirculación sobre laguna y parque ajardinado.">
+            <img src="assets/images/galeria-cascada-monolito.jpg" alt="Cascada monolítica natural en roca viva" loading="lazy" width="810" height="1440">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Cascadas & Fuentes</span>
+              <h4>Cascada Monolítica en Roca</h4>
               <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
             </div>
           </div>
 
-          <!-- ITEM NUEVO 5: Escultura de León Guardián -->
-          <div class="gallery-item" data-category="tematizaciones" data-title="Escultura León Guardián en Roca Esculpida" data-location="Bolivia" data-img="assets/images/galeria-leon-guardian.jpg" data-desc="Escultura monumental de león tallada artesanalmente en mortero reforzado sobre peana rocosa, diseñada para acceso a complejo recreativo.">
-            <img src="assets/images/galeria-leon-guardian.jpg" alt="Escultura de león guardián en piedra esculpida" loading="lazy" width="1200" height="675">
+          <!-- ITEM 5 (FOTO): Escultura Monumental Pegaso Alado -->
+          <div class="gallery-item" data-category="tematizaciones" data-title="Escultura Monumental Pegaso Alado" data-location="Bolivia" data-img="assets/images/galeria-pegaso-escultura.jpg" data-desc="Escultura monumental de Pegaso tallada y modelada a mano con alas desplegadas sobre peana de roca, policromía blanca y tratamiento de intemperie.">
+            <img src="assets/images/galeria-pegaso-escultura.jpg" alt="Escultura monumental de Pegaso alado en piedra esculpida" loading="lazy" width="630" height="1421">
             <div class="gallery-item-overlay">
-              <span class="gallery-tag">Escultura Temática</span>
-              <h4>Escultura León Guardián</h4>
+              <span class="gallery-tag">Escultura Monumental</span>
+              <h4>Pegaso Alado en Mortero Mineral</h4>
               <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
             </div>
           </div>
 
-          <!-- ITEM NUEVO 6: Cabaña & Mobiliario Faux-Bois -->
-          <div class="gallery-item" data-category="jardines" data-title="Cabaña & Mobiliario en Concreto Símil Madera" data-location="Bolivia" data-img="assets/images/galeria-cabana-fauxbois.jpg" data-desc="Área social con cabaña de techo rústico y juego de mesa central y bancas curvas esculpidas como troncos centenarios en concreto de alta resistencia.">
-            <img src="assets/images/galeria-cabana-fauxbois.jpg" alt="Cabaña y mesa tronco en hormigón símil madera" loading="lazy" width="1200" height="675">
+          <!-- ITEM 6 (FOTO): Cabaña Mirador sobre Laguna en Faux-Bois -->
+          <div class="gallery-item" data-category="jardines tematizaciones" data-title="Cabaña Mirador sobre Laguna en Faux-Bois" data-location="Bolivia" data-img="assets/images/galeria-mirador-cabana.jpg" data-desc="Estructura arquitectónica mirador con columnas de roca y troncos tallados en hormigón (faux-bois), barandas rústicas y vista panorámica a la laguna.">
+            <img src="assets/images/galeria-mirador-cabana.jpg" alt="Cabaña mirador en roca y troncos faux-bois sobre laguna" loading="lazy" width="1080" height="810">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Miradores & Faux-Bois</span>
+              <h4>Cabaña Mirador sobre Laguna</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM 7 (FOTO): Pérgolas Temáticas frente a Laguna -->
+          <div class="gallery-item" data-category="jardines" data-title="Pérgolas Temáticas frente a Laguna" data-location="Bolivia" data-img="assets/images/galeria-miradores-laguna.jpg" data-desc="Conjunto de miradores costeros con columnas de piedra esculpida, barandas orgánicas de ramas entrelazadas y techumbre de tejas para complejo recreativo.">
+            <img src="assets/images/galeria-miradores-laguna.jpg" alt="Miradores y pérgolas con columnas de roca rústica frente al lago" loading="lazy" width="1080" height="735">
+            <div class="gallery-item-overlay">
+              <span class="gallery-tag">Pérgolas & Balnearios</span>
+              <h4>Pérgolas frente a Laguna</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
+            </div>
+          </div>
+
+          <!-- ITEM 8 (FOTO): Mesa & Bancos en Troncos Centenarios Faux-Bois -->
+          <div class="gallery-item" data-category="jardines tematizaciones" data-title="Mesa & Bancos en Troncos Faux-Bois" data-location="Bolivia" data-img="assets/images/galeria-mesa-fauxbois.jpg" data-desc="Comedor exterior rústico modelado en ferrocemento de alta resistencia simulando corteza y vetas de madera noble centenaria, resistente a lluvia y sol.">
+            <img src="assets/images/galeria-mesa-fauxbois.jpg" alt="Mesa y bancos tallados en concreto símil madera faux-bois" loading="lazy" width="1080" height="1300">
             <div class="gallery-item-overlay">
               <span class="gallery-tag">Mobiliario Faux-Bois</span>
-              <h4>Mobiliario Tronco en Concreto</h4>
+              <h4>Mesa & Bancos Tronco Centenario</h4>
               <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
             </div>
           </div>
 
-          <!-- CATEGRORÍA 1: PISCINAS Y PARQUES ACUÁTICOS -->
-          <!-- Item: Campo Bello -->
-          <div class="gallery-item" data-category="piscinas" data-title="Parque Acuático Campo Bello" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-parque.jpg" data-desc="Complejo acuático integral con toboganes en troncos esculpidos, cavernas de roca con jardineras vivas y piscina biológica de borde rústico.">
-            <img src="assets/images/proyecto-parque.jpg" alt="Parque Acuático Campo Bello en Santa Cruz" loading="lazy" width="1200" height="675">
+          <!-- ITEM 9 (FOTO): Sombrilla Tropical & Estar en Faux-Bois -->
+          <div class="gallery-item" data-category="jardines" data-title="Sombrilla Tropical & Estar en Faux-Bois" data-location="Bolivia" data-img="assets/images/galeria-sombrilla-fauxbois.jpg" data-desc="Cabaña sombrilla de paja natural con mesa central y bancos curvos esculpidos en hormigón imitación tronco para áreas de descanso junto a piscinas y lagos.">
+            <img src="assets/images/galeria-sombrilla-fauxbois.jpg" alt="Sombrilla tropical con asientos tallados en concreto símil madera" loading="lazy" width="1599" height="1060">
             <div class="gallery-item-overlay">
-              <span class="gallery-tag">Parques Acuáticos</span>
-              <h4>Parque Acuático Campo Bello</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 2: Balneario Celina -->
-          <div class="gallery-item" data-category="piscinas" data-title="Balneario Celina - Caverna & Tobogán Tronco" data-location="Bolivia" data-img="assets/images/proyecto-piscina.jpg" data-desc="Muro monumental de arenisca esculpida a mano con letrero en relieve símil corteza y tobogán tubular tallado como tronco hueco.">
-            <img src="assets/images/proyecto-piscina.jpg" alt="Balneario Celina con tobogán y caverna de piedra" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Piscinas & Balnearios</span>
-              <h4>Balneario Celina</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 3: Montaña de Rocas & Tobogán Resort -->
-          <div class="gallery-item" data-category="piscinas" data-title="Montaña de Rocas & Tobogán Acuático Resort" data-location="Bolivia" data-img="assets/images/galeria-montana-resort.jpg" data-desc="Estructura colosal de roca artificial con cascadas, escalinatas y tobogán acuático integrado a piscina de complejo turístico.">
-            <img src="assets/images/galeria-montana-resort.jpg" alt="Montaña de roca artificial y toboganes en piscina de resort" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Toboganes & Piscinas</span>
-              <h4>Montaña de Rocas Resort</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 4: Piscina Infantil Temática - Hongo & Tiburón -->
-          <div class="gallery-item" data-category="piscinas" data-title="Piscina Infantil - Hongo Lluvia & Tobogán Tiburón" data-location="Bolivia" data-img="assets/images/galeria-piscina-infantil.jpg" data-desc="Zona acuática recreativa infantil con hongo hacedor de lluvia y tobogán tallado como tiburón gigante en hormigón pigmentado.">
-            <img src="assets/images/galeria-piscina-infantil.jpg" alt="Piscina infantil temática con hongo fuente y tobogán tiburón" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Parques Infantiles</span>
-              <h4>Piscina Infantil Hongo & Tiburón</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- CATEGORÍA 2: ESCULTURAS Y TEMATIZACIONES (4 Items) -->
-          <!-- Item 5: Escultura Paraba Barba Roja -->
-          <div class="gallery-item" data-category="tematizaciones" data-title="Escultura Monumental Paraba Barba Roja" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-escultura.jpg" data-desc="Escultura temática a gran escala modelada en mortero mineral con plumaje tallado a mano y policromía resistente a la intemperie.">
-            <img src="assets/images/proyecto-escultura.jpg" alt="Escultura monumental de Paraba Barba Roja" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Escultura Temática</span>
-              <h4>Paraba Barba Roja Monumental</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 6: Puma Andino en Borde de Piscina -->
-          <div class="gallery-item" data-category="tematizaciones" data-title="Escultura Puma Andino en Risco de Piscina" data-location="Bolivia" data-img="assets/images/proyecto-restaurante.jpg" data-desc="Escultura hiperrealista de felino silvestre tallada a mano sobre formación de peñasco rocoso y tronco al borde de la piscina.">
-            <img src="assets/images/proyecto-restaurante.jpg" alt="Escultura de Puma en risco de piscina" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Esculturas Vivas</span>
-              <h4>Puma Andino en Borde de Piscina</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 7: Parque Infantil Bosque Encantado -->
-          <div class="gallery-item" data-category="tematizaciones" data-title="Parque Infantil Bosque Encantado en Faux-Bois" data-location="Bolivia" data-img="assets/images/galeria-parque-infantil.jpg" data-desc="Juegos infantiles temáticos modelados en hormigón símil madera: casas del árbol, puente colgante, columpios y toboganes.">
-            <img src="assets/images/galeria-parque-infantil.jpg" alt="Parque infantil temático en hormigón símil madera" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Faux-Bois & Parques</span>
-              <h4>Parque Bosque Encantado</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 8: Taller y Modelado Artesanal -->
-          <div class="gallery-item" data-category="tematizaciones" data-title="Modelado Artesanal de Roca a Mano en Obra" data-location="Bolivia" data-img="assets/images/mountain-panorama.jpg" data-desc="Maestro artesano de Rock Art esculpiendo las fisuras, estratos geológicos y textura mineral directamente sobre mortero fresco.">
-            <img src="assets/images/mountain-panorama.jpg" alt="Maestro artesano esculpiendo roca a mano" loading="lazy" width="1200" height="750">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Taller Artesanal</span>
-              <h4>Modelado de Roca a Mano</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- CATEGORÍA 3: INGENIERÍA, BIO-LAGOS Y RIBERAS (4 Items) -->
-          <!-- Item 9: Bio-Laguna y Puente Símil Madera -->
-          <div class="gallery-item" data-category="cascadas" data-title="Bio-Laguna & Puente Rústico Símil Madera" data-location="Bolivia" data-img="assets/images/galeria-puente-laguna.jpg" data-desc="Gran bio-laguna con estribos de piedra esculpida, pasarela peatonal temática en hormigón símil madera y entorno natural.">
-            <img src="assets/images/galeria-puente-laguna.jpg" alt="Bio-Laguna con puente temático rústico" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Bio-Lagunas</span>
-              <h4>Bio-Laguna & Puente Rústico</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 10: Gran Lago Panorámico & Paseo de Riberas -->
-          <div class="gallery-item" data-category="cascadas" data-title="Gran Lago Panorámico & Muro de Escollera" data-location="Bolivia" data-img="assets/images/galeria-gran-laguna.jpg" data-desc="Gran lago con muro perimetral de piedra de río, paseo de ladrillo rústico, sombrillas de palma natural y estabilización ecológica.">
-            <img src="assets/images/galeria-gran-laguna.jpg" alt="Gran lago panorámico con muro de escollera de río" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Ingeniería Hidráulica</span>
-              <h4>Gran Lago & Riberas</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 11: Maquinaria Pesada e Ingeniería Fluvial -->
-          <div class="gallery-item" data-category="cascadas" data-title="Ingeniería Fluvial & Muro de Escollera con CAT 323" data-location="Bolivia" data-img="assets/images/galeria-maquinaria-rio.jpg" data-desc="Obras de contención y encauzamiento con maquinaria pesada y estabilización de laderas mediante roca tallada de alta resistencia.">
-            <img src="assets/images/galeria-maquinaria-rio.jpg" alt="Ingeniería fluvial y muro de roca con maquinaria pesada" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Ingeniería & Riberas</span>
-              <h4>Muro Fluvial & Maquinaria</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 12: Estructuración y Armado de Tobogán -->
-          <div class="gallery-item" data-category="cascadas" data-title="Construcción Estructural de Tobogán Acuático" data-location="Bolivia" data-img="assets/images/galeria-obra-slide.jpg" data-desc="Fase de armado estructural con enfierradura, mallas de refuerzo y proyección de mortero de alta resistencia para tobogán de piscina.">
-            <img src="assets/images/galeria-obra-slide.jpg" alt="Construcción y modelado de tobogán acuático en obra" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">En Construcción</span>
-              <h4>Estructura de Tobogán Acuático</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- CATEGORÍA 4: PAISAJISMO, GAZEBOS Y FAUX-BOIS (4 Items) -->
-          <!-- Item 13: Mirador y Gazebo sobre Laguna -->
-          <div class="gallery-item" data-category="jardines" data-title="Mirador & Gazebo Rústico sobre Laguna" data-location="Bolivia" data-img="assets/images/proyecto-cascada.jpg" data-desc="Pabellón mirador sobre agua con columnas de roca esculpida, barandas y vigas en hormigón símil madera y techo de teja.">
-            <img src="assets/images/proyecto-cascada.jpg" alt="Mirador y gazebo temático sobre laguna" loading="lazy" width="1200" height="800">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Gazebos & Faux-Bois</span>
-              <h4>Mirador Rústico sobre Laguna</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 14: Paisajismo Residencial -->
-          <div class="gallery-item" data-category="jardines" data-title="Paisajismo Residencial & Rocas Ornamentales" data-location="Santa Cruz, Bolivia" data-img="assets/images/proyecto-jardin.jpg" data-desc="Composición paisajística con roca artificial monolítica integrada con gravas decorativas, palmeras y plantas tropicales.">
-            <img src="assets/images/proyecto-jardin.jpg" alt="Jardinería y roca ornamental en Santa Cruz" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Jardinería Paisajística</span>
-              <h4>Paisajismo con Roca Ornamental</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 15: Parrillero y Cocina Exterior -->
-          <div class="gallery-item" data-category="jardines" data-title="Parrillero & Cocina Exterior en Piedra Tallada" data-location="Bolivia" data-img="assets/images/galeria-parrillero.jpg" data-desc="Quincho y churrasquera artesanal con revestimiento integral de piedra esculpida a mano, jardinera integrada y mesón de granito.">
-            <img src="assets/images/galeria-parrillero.jpg" alt="Parrillero rústico en piedra tallada artesanal" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Parrilleros & Quinchos</span>
-              <h4>Parrillero en Piedra Tallada</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
-            </div>
-          </div>
-
-          <!-- Item 16: Equipo de Maestros Artesanos -->
-          <div class="gallery-item" data-category="jardines" data-title="Equipo de Maestros Artesanos de Rock Art" data-location="Bolivia" data-img="assets/images/galeria-equipo-artesanos.jpg" data-desc="Maestros artesanos y escultores de Rock Art en plena faena constructiva con herramientas de tallado y modelado mineral.">
-            <img src="assets/images/galeria-equipo-artesanos.jpg" alt="Equipo de artesanos de Rock Art en obra" loading="lazy" width="1200" height="675">
-            <div class="gallery-item-overlay">
-              <span class="gallery-tag">Nuestros Artesanos</span>
-              <h4>Maestros Artesanos Rock Art</h4>
+              <span class="gallery-tag">Áreas Sociales & Relax</span>
+              <h4>Sombrilla & Estar en Faux-Bois</h4>
               <p><i class="fa-solid fa-location-dot"></i> Bolivia</p>
             </div>
           </div>
