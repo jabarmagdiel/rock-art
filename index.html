@@ -130,9 +130,9 @@
       <!-- Ambient Sound Toggle, Social Links & Mobile Toggle -->
       <div class="header-right">
         <!-- Ambient Sound Player Toggle -->
-        <button class="sound-toggle-btn" id="sound-toggle" title="Activar/Desactivar sonido ambiental de cascada">
+        <button class="sound-toggle-btn" id="sound-toggle" title="Activar/Desactivar música ambiental">
           <i class="fa-solid fa-volume-xmark" id="sound-icon"></i>
-          <span class="sound-label">Ambiente</span>
+          <span class="sound-label">Música</span>
         </button>
 
         <div class="social-links">
@@ -1002,7 +1002,13 @@
     </a>
   </div>
 
+  <!-- Reproductor de Música Ambiental -->
+  <audio id="ambient-audio" loop preload="metadata">
+    <source src="audio/musica-ambiente.mp3" type="audio/mpeg">
+    <source src="audio/OFFICIAL%20-%20Somewhere%20Over%20the%20Rainbow%202011%20-%20Israel%20IZ%20Kamakawiwo'ole.mp3" type="audio/mpeg">
+  </audio>
+
   <!-- Main JavaScript Logic -->
-  <script src="app.js?v=3.0"></script>
+  <script src="app.js?v=3.1"></script>
 </body>
 </html>
